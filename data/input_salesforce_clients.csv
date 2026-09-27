@@ -1,101 +1,101 @@
-ClientID,Name,LastPurchaseDate,Status,LifetimeValue,Region,FunnelStep,AppStatus ,SalesChannel
-C001,Client_1,1/1/2024,Inactive,8356.53,East,application complete,app_denied,chat
-C002,Client_2,1/16/2024,Active,9822.81,South,application start,app_approved,chat
-C003,Client_3,1/31/2024,At Risk,3746.58,West,application submit,app_approved,chat
-C004,Client_4,2/15/2024,Inactive,547.4,North,application complete,app_approved,phone
-C005,Client_5,3/1/2024,Active,3584.02,West,application educate,app_received,chat
-C006,Client_6,3/16/2024,At Risk,7179.16,East,application educate,app_received,chat
-C007,Client_7,3/31/2024,Active,3561.35,West,application abandon,app_approved,phone
-C008,Client_8,4/15/2024,Inactive,4697.16,South,application educate,app_approved,phone
-C009,Client_9,4/30/2024,Inactive,1706.42,East,application submit,app_denied,chat
-C010,Client_10,5/15/2024,Inactive,2415.81,West,application educate,app_cancelled,phone
-C011,Client_11,5/30/2024,At Risk,4976.19,East,application start,app_cancelled,chat
-C012,Client_12,6/14/2024,Inactive,4100.95,East,application start,app_received,chat
-C013,Client_13,6/29/2024,Inactive,4488.21,North,application complete,app_cancelled,phone
-C014,Client_14,7/14/2024,At Risk,2603.12,East,application complete,app_denied,chat
-C015,Client_15,7/29/2024,Inactive,1936.23,South,application abandon,app_cancelled,phone
-C016,Client_16,8/13/2024,Active,4163.01,North,application abandon,app_approved,phone
-C017,Client_17,8/28/2024,Inactive,6180.16,South,application complete,app_cancelled,phone
-C018,Client_18,9/12/2024,At Risk,5829.6,East,application educate,app_received,chat
-C019,Client_19,9/27/2024,Active,9391.4,West,application educate,app_approved,phone
-C020,Client_20,10/12/2024,Active,4898.53,West,application abandon,app_received,chat
-C021,Client_21,10/27/2024,At Risk,7993.57,South,application start,app_denied,phone
-C022,Client_22,11/11/2024,Inactive,7813.4,North,application start,app_denied,chat
-C023,Client_23,11/26/2024,Inactive,4756.99,North,application abandon,app_denied,phone
-C024,Client_24,12/11/2024,Inactive,3241.73,South,application submit,app_received,chat
-C025,Client_25,12/26/2024,Inactive,4272.12,North,application abandon,app_cancelled,phone
-C026,Client_26,1/10/2025,At Risk,2972.76,South,application start,app_cancelled,chat
-C027,Client_27,1/25/2025,Inactive,914.8,East,application start,app_received,phone
-C028,Client_28,2/9/2025,Active,9874.75,North,application educate,app_approved,chat
-C029,Client_29,2/24/2025,Active,7047.24,North,application abandon,app_denied,chat
-C030,Client_30,3/11/2025,At Risk,4755.04,North,application abandon,app_received,phone
-C031,Client_31,3/26/2025,At Risk,5260.33,South,application submit,app_approved,chat
-C032,Client_32,4/10/2025,Active,8254.84,South,application submit,app_received,chat
-C033,Client_33,4/25/2025,At Risk,4412.84,North,application abandon,app_received,phone
-C034,Client_34,5/10/2025,Inactive,3454.72,North,application start,app_received,chat
-C035,Client_35,5/25/2025,At Risk,3579.78,West,application complete,app_received,phone
-C036,Client_36,6/9/2025,Inactive,2347.45,North,application abandon,app_denied,phone
-C037,Client_37,6/24/2025,Inactive,2798.42,West,application abandon,app_cancelled,phone
-C038,Client_38,7/9/2025,At Risk,2887.19,East,application start,app_approved,chat
-C039,Client_39,7/24/2025,At Risk,1783.6,East,application educate,app_cancelled,phone
-C040,Client_40,8/8/2025,At Risk,1181.26,West,application educate,app_denied,phone
-C041,Client_41,8/23/2025,Inactive,2234.21,South,application educate,app_received,phone
-C042,Client_42,9/7/2025,Active,5652.72,East,application start,app_received,chat
-C043,Client_43,9/22/2025,At Risk,8989.32,East,application complete,app_received,phone
-C044,Client_44,10/7/2025,Active,6410.52,East,application start,app_received,chat
-C045,Client_45,10/22/2025,At Risk,8051.94,East,application educate,app_approved,phone
-C046,Client_46,11/6/2025,Inactive,1585.74,West,application educate,app_cancelled,phone
-C047,Client_47,11/21/2025,Inactive,1918.32,North,application start,app_denied,phone
-C048,Client_48,12/6/2025,At Risk,641.78,North,application submit,app_approved,phone
-C049,Client_49,12/21/2025,At Risk,7634.32,East,application complete,app_received,chat
-C050,Client_50,1/5/2026,Active,7155.05,West,application abandon,app_cancelled,phone
-C051,Client_51,1/20/2026,At Risk,1095.97,South,application start,app_cancelled,phone
-C052,Client_52,2/4/2026,Inactive,7803.9,West,application start,app_received,chat
-C053,Client_53,2/19/2026,At Risk,6716.42,North,application start,app_received,phone
-C054,Client_54,3/6/2026,Inactive,1583.93,East,application abandon,app_cancelled,chat
-C055,Client_55,3/21/2026,At Risk,6979.98,South,application complete,app_approved,chat
-C056,Client_56,4/5/2026,At Risk,4458.68,South,application abandon,app_denied,chat
-C057,Client_57,4/20/2026,Inactive,1649.11,West,application start,app_received,chat
-C058,Client_58,5/5/2026,Inactive,7222.97,North,application start,app_cancelled,phone
-C059,Client_59,5/20/2026,Inactive,3598.52,West,application submit,app_denied,phone
-C060,Client_60,6/4/2026,At Risk,5589.6,East,application start,app_cancelled,chat
-C061,Client_61,6/19/2026,Inactive,2619.52,North,application educate,app_denied,phone
-C062,Client_62,7/4/2026,Inactive,9702.78,South,application submit,app_denied,phone
-C063,Client_63,7/19/2026,At Risk,6666.28,South,application start,app_denied,chat
-C064,Client_64,8/3/2026,Inactive,1854.62,West,application complete,app_denied,chat
-C065,Client_65,8/18/2026,At Risk,4125.48,South,application submit,app_approved,phone
-C066,Client_66,9/2/2026,Active,3369.18,North,application complete,app_cancelled,chat
-C067,Client_67,9/17/2026,At Risk,7484.71,East,application start,app_cancelled,phone
-C068,Client_68,10/2/2026,Active,868.15,South,application submit,app_cancelled,chat
-C069,Client_69,10/17/2026,Inactive,9139.56,West,application educate,app_denied,phone
-C070,Client_70,11/1/2026,Inactive,1193.62,North,application abandon,app_approved,phone
-C071,Client_71,11/16/2026,Active,7927.59,East,application submit,app_received,phone
-C072,Client_72,12/1/2026,Inactive,3292.7,South,application abandon,app_denied,chat
-C073,Client_73,12/16/2026,Active,2091.99,West,application start,app_denied,chat
-C074,Client_74,12/31/2026,Active,4017.53,South,application educate,app_received,chat
-C075,Client_75,1/15/2027,Active,1732.08,North,application abandon,app_cancelled,chat
-C076,Client_76,1/30/2027,At Risk,2683.41,North,application complete,app_cancelled,phone
-C077,Client_77,2/14/2027,Inactive,6178.17,East,application abandon,app_received,phone
-C078,Client_78,3/1/2027,At Risk,7145.23,North,application submit,app_cancelled,chat
-C079,Client_79,3/16/2027,Inactive,7298.81,East,application submit,app_cancelled,phone
-C080,Client_80,3/31/2027,Active,5941.03,North,application start,app_denied,phone
-C081,Client_81,4/15/2027,Active,7128.53,North,application complete,app_received,chat
-C082,Client_82,4/30/2027,Active,4085.28,North,application abandon,app_denied,phone
-C083,Client_83,5/15/2027,Active,4976.34,East,application educate,app_approved,phone
-C084,Client_84,5/30/2027,Active,1323.75,East,application submit,app_approved,chat
-C085,Client_85,6/14/2027,Inactive,8951.54,West,application abandon,app_cancelled,chat
-C086,Client_86,6/29/2027,Active,1393.7,East,application abandon,app_denied,phone
-C087,Client_87,7/14/2027,Active,1734.99,South,application educate,app_approved,chat
-C088,Client_88,7/29/2027,Active,9531.24,West,application educate,app_denied,phone
-C089,Client_89,8/13/2027,Inactive,9710.14,South,application abandon,app_cancelled,phone
-C090,Client_90,8/28/2027,Active,6381.99,North,application abandon,app_approved,chat
-C091,Client_91,9/12/2027,Inactive,8276.2,East,application abandon,app_cancelled,chat
-C092,Client_92,9/27/2027,Inactive,4225.11,West,application start,app_denied,chat
-C093,Client_93,10/12/2027,Active,4601.42,North,application complete,app_denied,phone
-C094,Client_94,10/27/2027,At Risk,3091.78,South,application submit,app_cancelled,chat
-C095,Client_95,11/11/2027,Active,2574.37,West,application submit,app_approved,phone
-C096,Client_96,11/26/2027,Inactive,3669.82,East,application complete,app_denied,phone
-C097,Client_97,12/11/2027,Active,4954.58,North,application start,app_cancelled,phone
-C098,Client_98,12/26/2027,Inactive,3144.1,North,application start,app_approved,phone
-C099,Client_99,1/10/2028,At Risk,3152.71,South,application submit,app_denied,phone
-C100,Client_100,1/25/2028,Active,4291.33,North,application abandon,app_received,chat
+ClientID,Name,LastPurchaseDate,Status,LifetimeValue,Region,FunnelStep,AppStatus,SalesChannel
+C001,Client_1,1/1/2024,Inactive,3932.01,South,application complete,app_approved,chat
+C002,Client_2,1/16/2024,At Risk,6182.75,East,application abandon,app_approved,phone
+C003,Client_3,1/31/2024,Inactive,1062.89,West,application submit,app_denied,chat
+C004,Client_4,2/15/2024,Inactive,4182.5,West,application complete,app_denied,chat
+C005,Client_5,3/1/2024,At Risk,3568.85,South,application start,app_approved,phone
+C006,Client_6,3/16/2024,Inactive,1926.9,South,application complete,app_received,phone
+C007,Client_7,3/31/2024,Inactive,8255.21,East,application start,app_denied,phone
+C008,Client_8,4/15/2024,Active,4104.74,South,application educate,app_received,phone
+C009,Client_9,4/30/2024,Active,9798.1,North,application complete,app_received,chat
+C010,Client_10,5/15/2024,Active,6104.92,South,application submit,app_approved,phone
+C011,Client_11,5/30/2024,Active,6248.03,West,application start,app_cancelled,chat
+C012,Client_12,6/14/2024,Inactive,6560.97,West,application educate,app_approved,chat
+C013,Client_13,6/29/2024,Inactive,6926.28,East,application start,app_denied,chat
+C014,Client_14,7/14/2024,Active,1932.49,East,application abandon,app_received,chat
+C015,Client_15,7/29/2024,At Risk,4682.98,South,application submit,app_approved,chat
+C016,Client_16,8/13/2024,Inactive,2775.86,East,application abandon,app_cancelled,chat
+C017,Client_17,8/28/2024,Active,4323.73,South,application abandon,app_cancelled,chat
+C018,Client_18,9/12/2024,Inactive,1418.69,North,application abandon,app_denied,chat
+C019,Client_19,9/27/2024,Active,9694.37,North,application educate,app_cancelled,chat
+C020,Client_20,10/12/2024,At Risk,2542.54,North,application educate,app_approved,phone
+C021,Client_21,10/27/2024,Inactive,6881.77,East,application submit,app_received,chat
+C022,Client_22,11/11/2024,Active,3353.99,North,application start,app_received,phone
+C023,Client_23,11/26/2024,At Risk,8803.73,East,application abandon,app_received,chat
+C024,Client_24,12/11/2024,Active,6791.04,West,application start,app_cancelled,chat
+C025,Client_25,12/26/2024,Inactive,1750.35,West,application educate,app_cancelled,phone
+C026,Client_26,1/10/2025,Active,8528.21,West,application educate,app_received,phone
+C027,Client_27,1/25/2025,Inactive,9477.01,South,application start,app_denied,chat
+C028,Client_28,2/9/2025,At Risk,9087.21,North,application complete,app_received,phone
+C029,Client_29,2/24/2025,At Risk,5912.33,South,application educate,app_cancelled,phone
+C030,Client_30,3/11/2025,At Risk,1881.87,South,application complete,app_received,chat
+C031,Client_31,3/26/2025,At Risk,2328.4,West,application start,app_denied,chat
+C032,Client_32,4/10/2025,At Risk,9315.1,East,application start,app_received,phone
+C033,Client_33,4/25/2025,At Risk,5747.1,North,application complete,app_denied,chat
+C034,Client_34,5/10/2025,Inactive,2215.25,South,application abandon,app_cancelled,phone
+C035,Client_35,5/25/2025,Inactive,8898.54,East,application submit,app_denied,chat
+C036,Client_36,6/9/2025,Inactive,6594.93,South,application complete,app_approved,chat
+C037,Client_37,6/24/2025,Inactive,5912.1,East,application start,app_cancelled,phone
+C038,Client_38,7/9/2025,At Risk,4074.73,East,application educate,app_approved,chat
+C039,Client_39,7/24/2025,At Risk,4404.08,North,application abandon,app_cancelled,chat
+C040,Client_40,8/8/2025,Inactive,2775.15,West,application complete,app_cancelled,phone
+C041,Client_41,8/23/2025,At Risk,861.54,West,application complete,app_approved,phone
+C042,Client_42,9/7/2025,Active,8824.08,East,application abandon,app_denied,phone
+C043,Client_43,9/22/2025,Inactive,4943.44,North,application submit,app_cancelled,chat
+C044,Client_44,10/7/2025,Active,5702.53,South,application educate,app_received,chat
+C045,Client_45,10/22/2025,Inactive,3560.55,East,application submit,app_received,chat
+C046,Client_46,11/6/2025,At Risk,7637.59,South,application submit,app_approved,phone
+C047,Client_47,11/21/2025,Active,739.37,North,application start,app_received,phone
+C048,Client_48,12/6/2025,Active,4035.76,North,application complete,app_cancelled,phone
+C049,Client_49,12/21/2025,At Risk,788.33,South,application start,app_cancelled,chat
+C050,Client_50,1/5/2026,Active,1667.47,North,application complete,app_approved,phone
+C051,Client_51,1/20/2026,Active,9687.91,South,application complete,app_approved,chat
+C052,Client_52,2/4/2026,At Risk,6748.73,East,application educate,app_denied,chat
+C053,Client_53,2/19/2026,Inactive,4568.09,North,application submit,app_approved,chat
+C054,Client_54,3/6/2026,At Risk,5475.53,West,application complete,app_received,chat
+C055,Client_55,3/21/2026,Inactive,8791.69,South,application educate,app_denied,phone
+C056,Client_56,4/5/2026,Inactive,3770.0,West,application complete,app_denied,phone
+C057,Client_57,4/20/2026,Inactive,6107.76,West,application abandon,app_received,chat
+C058,Client_58,5/5/2026,At Risk,6995.0,South,application abandon,app_cancelled,chat
+C059,Client_59,5/20/2026,At Risk,3876.43,West,application complete,app_denied,chat
+C060,Client_60,6/4/2026,At Risk,5431.44,North,application abandon,app_cancelled,chat
+C061,Client_61,6/19/2026,Active,7769.85,West,application start,app_cancelled,phone
+C062,Client_62,7/4/2026,At Risk,9137.2,West,application start,app_denied,phone
+C063,Client_63,7/19/2026,At Risk,1935.09,South,application educate,app_approved,phone
+C064,Client_64,8/3/2026,Active,9367.48,West,application complete,app_approved,chat
+C065,Client_65,8/18/2026,Inactive,549.2,South,application start,app_denied,phone
+C066,Client_66,9/2/2026,Active,7653.29,West,application abandon,app_received,phone
+C067,Client_67,9/17/2026,Active,8200.0,West,application submit,app_received,phone
+C068,Client_68,10/2/2026,Active,1799.26,South,application abandon,app_denied,chat
+C069,Client_69,10/17/2026,Inactive,4479.58,West,application educate,app_cancelled,chat
+C070,Client_70,11/1/2026,Inactive,8244.93,West,application educate,app_cancelled,phone
+C071,Client_71,11/16/2026,Inactive,635.58,East,application start,app_cancelled,phone
+C072,Client_72,12/1/2026,Active,6470.39,North,application educate,app_received,chat
+C073,Client_73,12/16/2026,Inactive,8033.72,North,application submit,app_approved,phone
+C074,Client_74,12/31/2026,At Risk,5373.53,North,application complete,app_approved,phone
+C075,Client_75,1/15/2027,At Risk,7395.57,East,application complete,app_denied,chat
+C076,Client_76,1/30/2027,Active,2651.02,North,application start,app_denied,chat
+C077,Client_77,2/14/2027,At Risk,2385.95,East,application educate,app_received,chat
+C078,Client_78,3/1/2027,Inactive,3949.71,East,application submit,app_denied,chat
+C079,Client_79,3/16/2027,At Risk,2204.36,South,application complete,app_denied,chat
+C080,Client_80,3/31/2027,Active,3787.58,North,application abandon,app_cancelled,chat
+C081,Client_81,4/15/2027,At Risk,9507.18,West,application abandon,app_denied,chat
+C082,Client_82,4/30/2027,Active,5946.66,North,application start,app_received,chat
+C083,Client_83,5/15/2027,Inactive,3730.65,West,application educate,app_cancelled,chat
+C084,Client_84,5/30/2027,Inactive,3079.48,South,application start,app_received,chat
+C085,Client_85,6/14/2027,Active,9544.38,North,application abandon,app_received,chat
+C086,Client_86,6/29/2027,At Risk,4722.54,North,application submit,app_cancelled,phone
+C087,Client_87,7/14/2027,Inactive,9813.75,East,application abandon,app_approved,chat
+C088,Client_88,7/29/2027,Inactive,5397.47,South,application complete,app_denied,chat
+C089,Client_89,8/13/2027,Inactive,5451.08,North,application submit,app_received,phone
+C090,Client_90,8/28/2027,At Risk,9017.13,North,application educate,app_denied,chat
+C091,Client_91,9/12/2027,Active,7556.29,North,application submit,app_approved,phone
+C092,Client_92,9/27/2027,Inactive,6016.2,South,application start,app_cancelled,phone
+C093,Client_93,10/12/2027,At Risk,4553.17,North,application abandon,app_denied,chat
+C094,Client_94,10/27/2027,Active,8842.78,North,application educate,app_cancelled,phone
+C095,Client_95,11/11/2027,Active,4410.64,East,application educate,app_cancelled,chat
+C096,Client_96,11/26/2027,At Risk,9266.22,East,application complete,app_cancelled,phone
+C097,Client_97,12/11/2027,Inactive,1152.8,South,application complete,app_received,phone
+C098,Client_98,12/26/2027,At Risk,4584.97,West,application abandon,app_cancelled,chat
+C099,Client_99,1/10/2028,At Risk,5435.39,West,application submit,app_denied,chat
+C100,Client_100,1/25/2028,Inactive,9533.91,South,application start,app_approved,chat

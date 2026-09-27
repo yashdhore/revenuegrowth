@@ -1,101 +1,101 @@
 CallID,ClientID,Transcript,CallDate,TimeSpent,AgentName,FunnelStep,SentimentScore,Resolved,InteractionIntent,PreviousContactCount,AgentPerformanceScore,CampaignSent,NextBestAction
-P001,C040,I love the support team!,5/1/2024,50,Sam,application complete,0.13,Yes,Cancel Request,5,1.05,No,Phone Call
-P002,C003,I love the support team!,5/3/2024,122,Jordan,application start,0.93,Yes,Cancel Request,4,1.4,Yes,Escalate
-P003,C033,I might cancel soon.,5/5/2024,263,Alex,application abandon,0.26,Yes,Cancel Request,2,1.11,No,Survey
-P004,C030,I love the support team!,5/7/2024,530,Alex,application abandon,0.87,Yes,Billing,5,3.18,Yes,Survey
-P005,C046,I love the support team!,5/9/2024,58,Casey,application educate,0.78,Yes,Product Info,4,4.65,No,Survey
-P006,C025,I'm not happy with the service.,5/11/2024,534,Casey,application submit,0.32,Yes,Feedback,4,3.15,No,Escalate
-P007,C035,I'm not happy with the service.,5/13/2024,136,Alex,application educate,0.47,No,Cancel Request,0,1.27,Yes,Offer
-P008,C030,I might cancel soon.,5/15/2024,356,Casey,application complete,-0.88,No,Technical Support,1,3.45,Yes,Survey
-P009,C028,I'm not happy with the service.,5/17/2024,217,Casey,application abandon,-0.76,No,Product Info,0,4.02,No,Escalate
-P010,C080,Is there a better plan?,5/19/2024,166,Jordan,application complete,-0.39,No,Technical Support,5,4.68,No,Survey
-P011,C028,Everything is fine.,5/21/2024,127,Sam,application submit,-0.1,No,Product Info,4,2.25,Yes,Phone Call
-P012,C022,I might cancel soon.,5/23/2024,571,Jordan,application start,0.73,No,Technical Support,2,1.99,No,Escalate
-P013,C076,I might cancel soon.,5/25/2024,339,Jordan,application complete,0.11,No,Technical Support,1,4.77,No,SMS
-P014,C014,Everything is fine.,5/27/2024,586,Morgan,application abandon,-0.33,Yes,Product Info,2,3.94,No,SMS
-P015,C091,I'm not happy with the service.,5/29/2024,64,Sam,application start,-0.86,Yes,Billing,0,2.76,Yes,Escalate
-P016,C094,Everything is fine.,5/31/2024,99,Sam,application abandon,0.18,No,Billing,0,3.04,No,Offer
-P017,C005,I might cancel soon.,6/2/2024,434,Taylor,application educate,0.4,No,Cancel Request,4,3.93,Yes,Phone Call
-P018,C064,Is there a better plan?,6/4/2024,328,Casey,application complete,-0.68,No,Billing,1,2.01,Yes,Escalate
-P019,C012,I might cancel soon.,6/6/2024,87,Jordan,application start,-0.38,No,Billing,4,1.16,Yes,SMS
-P020,C094,I'm not happy with the service.,6/8/2024,351,Taylor,application abandon,-0.44,Yes,Technical Support,0,3.98,Yes,SMS
-P021,C065,Is there a better plan?,6/10/2024,431,Casey,application submit,0.9,Yes,Billing,2,3.76,Yes,Survey
-P022,C072,I'm not happy with the service.,6/12/2024,33,Morgan,application abandon,0.2,No,Product Info,3,1.7,Yes,Survey
-P023,C032,Is there a better plan?,6/14/2024,118,Sam,application educate,1,Yes,Cancel Request,4,4.32,No,Phone Call
-P024,C050,I'm not happy with the service.,6/16/2024,467,Jordan,application abandon,-0.25,No,Feedback,1,4.97,Yes,Phone Call
-P025,C057,I love the support team!,6/18/2024,474,Morgan,application complete,-0.6,No,Technical Support,2,3.02,No,Offer
-P026,C042,I might cancel soon.,6/20/2024,484,Taylor,application submit,0.18,No,Billing,0,3.16,No,Survey
-P027,C039,I love the support team!,6/22/2024,528,Casey,application start,-0.89,No,Product Info,1,4.4,No,Offer
-P028,C031,I might cancel soon.,6/24/2024,527,Casey,application start,0.21,Yes,Product Info,1,1.37,No,SMS
-P029,C039,I'm not happy with the service.,6/26/2024,232,Taylor,application start,-0.07,No,Feedback,2,1.81,No,Survey
-P030,C057,I'm not happy with the service.,6/28/2024,212,Alex,application educate,-0.53,Yes,Billing,0,2.92,No,Survey
-P031,C013,Everything is fine.,6/30/2024,393,Sam,application abandon,-0.82,Yes,Technical Support,0,4.41,No,Escalate
-P032,C048,I might cancel soon.,7/2/2024,180,Jordan,application complete,0.19,No,Product Info,3,4.24,Yes,Survey
-P033,C077,Is there a better plan?,7/4/2024,419,Jordan,application complete,-0.84,Yes,Cancel Request,5,2.09,No,Escalate
-P034,C053,I might cancel soon.,7/6/2024,34,Taylor,application complete,0.35,Yes,Feedback,1,1.91,Yes,Offer
-P035,C053,Is there a better plan?,7/8/2024,340,Morgan,application start,-0.55,No,Billing,4,3.63,No,Escalate
-P036,C024,I love the support team!,7/10/2024,105,Alex,application abandon,-0.95,No,Feedback,4,2.81,No,Phone Call
-P037,C013,Everything is fine.,7/12/2024,56,Alex,application abandon,0.77,Yes,Billing,1,3.53,Yes,Escalate
-P038,C078,Everything is fine.,7/14/2024,327,Taylor,application educate,-0.28,No,Cancel Request,0,2.96,Yes,Survey
-P039,C087,I love the support team!,7/16/2024,589,Morgan,application complete,0.1,Yes,Product Info,5,4.66,Yes,SMS
-P040,C046,I'm not happy with the service.,7/18/2024,65,Jordan,application submit,-0.17,No,Billing,5,4.84,Yes,Escalate
-P041,C073,I love the support team!,7/20/2024,570,Morgan,application submit,0.59,Yes,Feedback,2,2.73,Yes,Survey
-P042,C015,I love the support team!,7/22/2024,417,Morgan,application educate,-0.46,Yes,Billing,2,2.14,Yes,Escalate
-P043,C086,Is there a better plan?,7/24/2024,371,Jordan,application abandon,0.34,Yes,Technical Support,0,2.76,No,Escalate
-P044,C027,I love the support team!,7/26/2024,434,Casey,application start,0.28,No,Product Info,2,3.91,No,Survey
-P045,C031,I love the support team!,7/28/2024,475,Morgan,application abandon,0.33,No,Cancel Request,3,1.5,No,SMS
-P046,C097,I love the support team!,7/30/2024,288,Morgan,application educate,-0.67,No,Product Info,0,3.57,No,SMS
-P047,C043,I might cancel soon.,8/1/2024,372,Sam,application complete,0.39,Yes,Billing,3,2.04,Yes,Escalate
-P048,C050,Everything is fine.,8/3/2024,98,Jordan,application submit,-0.69,No,Product Info,5,4.35,No,Escalate
-P049,C013,I'm not happy with the service.,8/5/2024,147,Sam,application submit,0.92,No,Billing,4,4.75,Yes,SMS
-P050,C042,Everything is fine.,8/7/2024,460,Taylor,application start,0.62,Yes,Product Info,3,1.4,Yes,Escalate
-P051,C051,Is there a better plan?,8/9/2024,527,Sam,application submit,-0.31,Yes,Billing,2,3.85,Yes,Escalate
-P052,C071,Everything is fine.,8/11/2024,379,Alex,application submit,0.2,No,Billing,1,1.88,No,Survey
-P053,C030,I might cancel soon.,8/13/2024,271,Jordan,application educate,-0.31,Yes,Cancel Request,1,4.93,Yes,Offer
-P054,C064,Everything is fine.,8/15/2024,451,Jordan,application submit,0.33,Yes,Billing,4,4.85,No,SMS
-P055,C070,I love the support team!,8/17/2024,439,Casey,application start,0.62,Yes,Cancel Request,0,1.31,Yes,Survey
-P056,C045,I'm not happy with the service.,8/19/2024,384,Taylor,application start,0.75,Yes,Billing,4,1.33,Yes,Escalate
-P057,C019,Everything is fine.,8/21/2024,586,Jordan,application educate,0.57,Yes,Feedback,1,3.45,Yes,Phone Call
-P058,C094,I might cancel soon.,8/23/2024,580,Jordan,application educate,-0.97,No,Cancel Request,4,1.99,No,SMS
-P059,C081,I love the support team!,8/25/2024,162,Casey,application submit,0.71,Yes,Cancel Request,1,4.61,Yes,Escalate
-P060,C027,I'm not happy with the service.,8/27/2024,97,Sam,application abandon,-0.33,No,Cancel Request,4,4.59,No,SMS
-P061,C022,I'm not happy with the service.,8/29/2024,468,Sam,application start,0.35,Yes,Cancel Request,2,1.95,Yes,Escalate
-P062,C025,Is there a better plan?,8/31/2024,303,Morgan,application start,-0.52,No,Technical Support,5,1.68,No,Phone Call
-P063,C080,I love the support team!,9/2/2024,325,Jordan,application educate,0.38,No,Technical Support,1,4.97,No,SMS
-P064,C063,I love the support team!,9/4/2024,274,Taylor,application educate,-0.9,No,Feedback,5,4.21,No,Survey
-P065,C096,I'm not happy with the service.,9/6/2024,55,Sam,application educate,-0.13,Yes,Feedback,2,2.25,No,Offer
-P066,C022,I love the support team!,9/8/2024,281,Jordan,application submit,-0.58,No,Cancel Request,1,1.05,Yes,Phone Call
-P067,C061,I love the support team!,9/10/2024,593,Taylor,application complete,0.38,No,Technical Support,4,2.02,Yes,Phone Call
-P068,C084,I love the support team!,9/12/2024,481,Morgan,application abandon,0.74,No,Feedback,1,4.86,No,Escalate
-P069,C045,I'm not happy with the service.,9/14/2024,191,Casey,application start,0.18,Yes,Technical Support,4,3.29,Yes,Offer
-P070,C027,I might cancel soon.,9/16/2024,360,Morgan,application start,-0.07,No,Product Info,4,2.37,Yes,SMS
-P071,C096,Is there a better plan?,9/18/2024,130,Morgan,application submit,0.85,Yes,Product Info,1,1.54,Yes,SMS
-P072,C088,Is there a better plan?,9/20/2024,296,Sam,application start,-0.43,Yes,Feedback,3,4.89,Yes,Survey
-P073,C011,Everything is fine.,9/22/2024,304,Jordan,application start,-0.81,Yes,Billing,3,4.64,No,Escalate
-P074,C018,I'm not happy with the service.,9/24/2024,348,Jordan,application educate,-0.67,Yes,Cancel Request,0,2.11,No,Escalate
-P075,C032,Everything is fine.,9/26/2024,529,Taylor,application educate,-0.33,Yes,Billing,0,2.95,No,Escalate
-P076,C084,I'm not happy with the service.,9/28/2024,395,Taylor,application start,0.89,No,Product Info,5,3.75,No,Escalate
-P077,C006,Is there a better plan?,9/30/2024,509,Sam,application start,1,Yes,Product Info,5,2.05,Yes,Offer
-P078,C059,I might cancel soon.,10/2/2024,491,Jordan,application complete,0.11,No,Billing,4,1.12,Yes,Offer
-P079,C090,Is there a better plan?,10/4/2024,459,Jordan,application complete,-0.82,No,Product Info,2,2.75,Yes,Survey
-P080,C034,I love the support team!,10/6/2024,430,Taylor,application start,0.37,Yes,Billing,1,3.83,No,SMS
-P081,C019,Everything is fine.,10/8/2024,146,Sam,application educate,-0.29,No,Technical Support,4,2.91,Yes,Survey
-P082,C064,I might cancel soon.,10/10/2024,489,Jordan,application start,0.28,No,Feedback,3,1.63,Yes,Offer
-P083,C062,I'm not happy with the service.,10/12/2024,126,Morgan,application educate,-0.83,Yes,Billing,4,4.65,No,SMS
-P084,C087,Everything is fine.,10/14/2024,49,Jordan,application submit,-0.15,No,Feedback,1,1.17,No,Phone Call
-P085,C015,I love the support team!,10/16/2024,284,Alex,application start,-0.32,Yes,Billing,1,4.86,No,Phone Call
-P086,C027,Is there a better plan?,10/18/2024,478,Casey,application educate,0.29,No,Feedback,3,3.4,Yes,Offer
-P087,C013,I'm not happy with the service.,10/20/2024,186,Morgan,application complete,0.51,No,Product Info,3,3.13,Yes,Escalate
-P088,C082,I love the support team!,10/22/2024,394,Jordan,application educate,-0.87,No,Billing,1,4.93,Yes,Phone Call
-P089,C067,I'm not happy with the service.,10/24/2024,411,Morgan,application complete,0.02,Yes,Cancel Request,4,4.02,Yes,SMS
-P090,C043,I might cancel soon.,10/26/2024,463,Sam,application start,0.97,No,Billing,3,1.54,No,Phone Call
-P091,C012,I love the support team!,10/28/2024,308,Taylor,application complete,-0.72,No,Cancel Request,0,2.94,No,SMS
-P092,C036,Is there a better plan?,10/30/2024,295,Morgan,application start,-0.38,Yes,Cancel Request,0,2.94,No,Survey
-P093,C043,Everything is fine.,11/1/2024,494,Casey,application complete,0.89,No,Technical Support,4,4.88,Yes,Survey
-P094,C015,Everything is fine.,11/3/2024,234,Alex,application start,-0.79,No,Feedback,1,3.38,Yes,Survey
-P095,C046,Everything is fine.,11/5/2024,205,Jordan,application abandon,0.87,Yes,Feedback,3,2.09,No,Phone Call
-P096,C048,I love the support team!,11/7/2024,49,Casey,application abandon,-0.37,Yes,Cancel Request,3,1.52,No,Escalate
-P097,C061,Everything is fine.,11/9/2024,134,Alex,application abandon,0.34,No,Feedback,3,4.2,No,Offer
-P098,C009,Is there a better plan?,11/11/2024,224,Morgan,application start,0.69,Yes,Feedback,4,3.83,Yes,Offer
-P099,C052,I might cancel soon.,11/13/2024,298,Jordan,application abandon,0.53,No,Feedback,1,2.74,No,Offer
-P100,C016,I might cancel soon.,11/15/2024,540,Morgan,application complete,0.31,No,Product Info,4,1.76,Yes,Escalate
+P001,C090,Everything is fine.,5/1/2024,227,Alex,application start,-0.22,Yes,Technical Support,3,4.45,Yes,Escalate
+P002,C087,Is there a better plan?,5/3/2024,244,Alex,application start,-0.1,Yes,Feedback,2,2.69,No,SMS
+P003,C082,Everything is fine.,5/5/2024,156,Taylor,application abandon,0.54,No,Feedback,5,3.25,Yes,Survey
+P004,C086,Is there a better plan?,5/7/2024,459,Taylor,application educate,-0.82,Yes,Technical Support,1,4.61,No,SMS
+P005,C007,Everything is fine.,5/9/2024,295,Sam,application complete,-0.9,Yes,Cancel Request,4,1.6,Yes,Offer
+P006,C082,I'm not happy with the service.,5/11/2024,253,Alex,application start,0.88,No,Technical Support,4,1.74,Yes,Offer
+P007,C095,Everything is fine.,5/13/2024,559,Morgan,application complete,-0.03,No,Cancel Request,0,1.07,Yes,Survey
+P008,C027,I'm not happy with the service.,5/15/2024,133,Alex,application abandon,-0.18,Yes,Cancel Request,0,2.42,No,Offer
+P009,C017,Is there a better plan?,5/17/2024,318,Casey,application complete,-0.7,No,Billing,0,1.52,Yes,Phone Call
+P010,C008,I might cancel soon.,5/19/2024,479,Alex,application start,0.01,No,Feedback,3,3.29,Yes,Escalate
+P011,C080,I might cancel soon.,5/21/2024,347,Taylor,application start,0.33,Yes,Billing,2,2.33,Yes,Survey
+P012,C095,Everything is fine.,5/23/2024,258,Sam,application complete,0.79,No,Feedback,3,1.36,No,SMS
+P013,C061,I'm not happy with the service.,5/25/2024,290,Sam,application submit,-0.22,No,Product Info,0,3.91,No,Phone Call
+P014,C062,I love the support team!,5/27/2024,360,Taylor,application submit,-0.74,Yes,Technical Support,3,4.03,No,Phone Call
+P015,C079,Everything is fine.,5/29/2024,493,Morgan,application start,0.51,No,Cancel Request,1,4.63,No,Phone Call
+P016,C001,I might cancel soon.,5/31/2024,590,Alex,application abandon,-0.39,Yes,Billing,1,2.42,No,Phone Call
+P017,C084,Everything is fine.,6/2/2024,452,Alex,application educate,0.43,Yes,Technical Support,0,3.18,No,SMS
+P018,C092,I might cancel soon.,6/4/2024,399,Morgan,application educate,0.6,No,Product Info,3,3.56,Yes,SMS
+P019,C014,I might cancel soon.,6/6/2024,98,Jordan,application submit,0.93,No,Product Info,3,4.5,Yes,SMS
+P020,C099,I love the support team!,6/8/2024,329,Morgan,application abandon,-0.66,Yes,Cancel Request,4,4.78,Yes,SMS
+P021,C085,Everything is fine.,6/10/2024,50,Casey,application complete,-0.47,Yes,Billing,0,2.34,No,Escalate
+P022,C029,I might cancel soon.,6/12/2024,192,Morgan,application educate,-0.22,Yes,Billing,3,1.87,Yes,Phone Call
+P023,C048,I love the support team!,6/14/2024,265,Taylor,application abandon,0.64,Yes,Feedback,1,2.1,No,Survey
+P024,C082,I'm not happy with the service.,6/16/2024,434,Alex,application complete,-0.13,Yes,Technical Support,3,2.05,No,Survey
+P025,C091,I love the support team!,6/18/2024,383,Morgan,application complete,-0.13,Yes,Cancel Request,5,4.1,Yes,Survey
+P026,C009,Is there a better plan?,6/20/2024,578,Sam,application submit,0.68,Yes,Product Info,3,3.49,No,Phone Call
+P027,C066,I'm not happy with the service.,6/22/2024,302,Casey,application submit,-0.76,Yes,Billing,2,1.48,Yes,Phone Call
+P028,C044,I love the support team!,6/24/2024,434,Jordan,application start,-0.78,Yes,Product Info,2,3.5,No,Survey
+P029,C035,Everything is fine.,6/26/2024,317,Sam,application start,-0.82,No,Cancel Request,3,3.65,Yes,SMS
+P030,C082,Is there a better plan?,6/28/2024,469,Taylor,application start,0.02,Yes,Billing,3,2.97,No,Survey
+P031,C069,I'm not happy with the service.,6/30/2024,455,Morgan,application abandon,-0.58,No,Feedback,0,3.94,Yes,Survey
+P032,C041,Is there a better plan?,7/2/2024,211,Taylor,application start,-0.28,Yes,Feedback,3,1.28,Yes,Phone Call
+P033,C089,I'm not happy with the service.,7/4/2024,235,Casey,application complete,-0.01,Yes,Billing,1,3.76,Yes,Offer
+P034,C052,I might cancel soon.,7/6/2024,208,Morgan,application submit,0.06,Yes,Technical Support,1,1.23,No,Survey
+P035,C086,Everything is fine.,7/8/2024,374,Jordan,application abandon,-0.22,No,Product Info,1,4.42,Yes,Phone Call
+P036,C012,I love the support team!,7/10/2024,234,Alex,application educate,-0.72,No,Feedback,5,3.14,No,Offer
+P037,C092,I love the support team!,7/12/2024,545,Sam,application start,0.64,No,Product Info,2,4.37,Yes,Phone Call
+P038,C082,Everything is fine.,7/14/2024,303,Casey,application submit,0.73,No,Technical Support,2,1.58,Yes,Survey
+P039,C054,I might cancel soon.,7/16/2024,466,Morgan,application abandon,0.13,Yes,Cancel Request,1,1.8,Yes,Phone Call
+P040,C050,I love the support team!,7/18/2024,540,Morgan,application educate,-0.42,No,Feedback,0,4.34,Yes,Escalate
+P041,C032,Is there a better plan?,7/20/2024,352,Morgan,application complete,1.0,Yes,Product Info,3,1.36,No,Escalate
+P042,C025,I'm not happy with the service.,7/22/2024,296,Taylor,application submit,-0.76,Yes,Feedback,3,2.29,Yes,Phone Call
+P043,C028,I'm not happy with the service.,7/24/2024,524,Taylor,application start,0.76,Yes,Product Info,1,4.13,Yes,Survey
+P044,C078,Everything is fine.,7/26/2024,130,Jordan,application submit,0.25,Yes,Billing,5,4.42,Yes,SMS
+P045,C039,I'm not happy with the service.,7/28/2024,566,Alex,application start,-0.48,Yes,Product Info,3,1.56,Yes,Survey
+P046,C098,I might cancel soon.,7/30/2024,334,Jordan,application start,0.18,Yes,Feedback,0,1.26,Yes,Survey
+P047,C039,Everything is fine.,8/1/2024,547,Jordan,application educate,0.11,Yes,Feedback,0,3.51,No,SMS
+P048,C054,I might cancel soon.,8/3/2024,178,Morgan,application submit,-0.98,No,Product Info,0,1.88,No,Offer
+P049,C040,I might cancel soon.,8/5/2024,550,Morgan,application educate,-0.07,No,Cancel Request,5,2.18,No,SMS
+P050,C074,I'm not happy with the service.,8/7/2024,393,Taylor,application submit,0.55,Yes,Technical Support,1,1.21,No,Phone Call
+P051,C036,Is there a better plan?,8/9/2024,30,Taylor,application submit,0.27,No,Billing,5,2.42,Yes,Phone Call
+P052,C100,I love the support team!,8/11/2024,223,Casey,application submit,-0.74,No,Billing,1,4.25,Yes,SMS
+P053,C065,I love the support team!,8/13/2024,574,Jordan,application complete,-0.58,Yes,Product Info,1,3.31,Yes,SMS
+P054,C004,I'm not happy with the service.,8/15/2024,573,Morgan,application educate,0.39,Yes,Product Info,0,1.12,No,Survey
+P055,C096,Everything is fine.,8/17/2024,374,Jordan,application start,-0.95,Yes,Cancel Request,0,1.3,Yes,Survey
+P056,C060,Is there a better plan?,8/19/2024,279,Morgan,application start,0.38,Yes,Product Info,1,4.56,Yes,Escalate
+P057,C070,I might cancel soon.,8/21/2024,344,Taylor,application educate,0.07,No,Billing,3,3.53,Yes,Phone Call
+P058,C097,Is there a better plan?,8/23/2024,362,Jordan,application start,-0.23,No,Feedback,2,1.7,Yes,Phone Call
+P059,C029,Everything is fine.,8/25/2024,41,Taylor,application educate,-0.16,No,Cancel Request,1,3.47,No,SMS
+P060,C012,I love the support team!,8/27/2024,363,Jordan,application abandon,-0.04,No,Cancel Request,1,4.19,No,Escalate
+P061,C069,Everything is fine.,8/29/2024,137,Morgan,application start,-0.8,No,Feedback,1,4.3,No,Offer
+P062,C023,I might cancel soon.,8/31/2024,266,Taylor,application submit,0.85,No,Billing,3,3.59,No,Offer
+P063,C002,Everything is fine.,9/2/2024,295,Sam,application educate,-0.16,Yes,Technical Support,5,1.56,No,Phone Call
+P064,C056,I'm not happy with the service.,9/4/2024,588,Sam,application complete,0.33,Yes,Product Info,2,4.4,No,SMS
+P065,C055,I'm not happy with the service.,9/6/2024,570,Casey,application complete,-0.79,Yes,Technical Support,0,3.69,No,Phone Call
+P066,C073,I'm not happy with the service.,9/8/2024,54,Alex,application start,0.76,Yes,Cancel Request,2,4.3,No,Survey
+P067,C091,I'm not happy with the service.,9/10/2024,274,Jordan,application start,0.39,Yes,Product Info,0,2.9,Yes,Escalate
+P068,C056,Is there a better plan?,9/12/2024,454,Alex,application submit,-0.49,Yes,Cancel Request,0,4.47,Yes,Offer
+P069,C025,I love the support team!,9/14/2024,513,Sam,application submit,0.81,No,Cancel Request,0,4.21,Yes,Offer
+P070,C055,Is there a better plan?,9/16/2024,180,Casey,application submit,0.76,Yes,Product Info,4,2.32,No,Survey
+P071,C007,I might cancel soon.,9/18/2024,262,Casey,application abandon,-0.08,No,Feedback,2,1.61,Yes,Escalate
+P072,C006,I might cancel soon.,9/20/2024,64,Jordan,application start,-0.44,Yes,Billing,3,3.48,No,SMS
+P073,C011,I love the support team!,9/22/2024,72,Jordan,application start,0.65,No,Product Info,0,1.82,No,Escalate
+P074,C074,I might cancel soon.,9/24/2024,132,Alex,application start,-0.99,No,Billing,3,2.38,No,Survey
+P075,C090,Is there a better plan?,9/26/2024,116,Taylor,application submit,0.9,Yes,Feedback,2,1.91,Yes,Offer
+P076,C033,Is there a better plan?,9/28/2024,458,Jordan,application start,0.93,Yes,Feedback,1,2.57,Yes,Offer
+P077,C009,I might cancel soon.,9/30/2024,255,Taylor,application complete,-0.84,Yes,Product Info,0,2.41,No,Survey
+P078,C008,I'm not happy with the service.,10/2/2024,548,Sam,application complete,0.89,No,Feedback,5,3.8,Yes,Phone Call
+P079,C013,Is there a better plan?,10/4/2024,127,Alex,application complete,-0.43,Yes,Product Info,3,3.43,Yes,Offer
+P080,C096,Everything is fine.,10/6/2024,472,Sam,application complete,0.63,No,Feedback,4,1.68,No,SMS
+P081,C016,Is there a better plan?,10/8/2024,228,Alex,application educate,0.73,Yes,Feedback,5,3.61,Yes,Survey
+P082,C066,Everything is fine.,10/10/2024,192,Sam,application abandon,-0.64,No,Technical Support,4,4.01,Yes,SMS
+P083,C062,Is there a better plan?,10/12/2024,198,Casey,application educate,-0.32,Yes,Billing,4,2.81,Yes,Escalate
+P084,C046,Everything is fine.,10/14/2024,313,Sam,application start,0.91,Yes,Cancel Request,3,1.14,No,Offer
+P085,C048,I love the support team!,10/16/2024,540,Jordan,application complete,0.57,Yes,Billing,2,4.18,No,Survey
+P086,C074,I might cancel soon.,10/18/2024,97,Casey,application submit,0.4,No,Billing,3,3.89,No,SMS
+P087,C081,I might cancel soon.,10/20/2024,361,Alex,application complete,-0.53,Yes,Technical Support,2,1.25,No,Escalate
+P088,C048,Everything is fine.,10/22/2024,269,Morgan,application complete,0.46,Yes,Billing,4,2.11,No,Offer
+P089,C067,I might cancel soon.,10/24/2024,384,Taylor,application educate,-0.92,Yes,Feedback,5,4.04,No,Survey
+P090,C013,Is there a better plan?,10/26/2024,177,Sam,application submit,-0.47,Yes,Product Info,1,3.54,No,Escalate
+P091,C094,I love the support team!,10/28/2024,194,Sam,application complete,-0.5,Yes,Product Info,4,1.58,No,SMS
+P092,C061,I'm not happy with the service.,10/30/2024,48,Morgan,application abandon,-0.89,Yes,Cancel Request,1,2.37,No,Escalate
+P093,C069,Is there a better plan?,11/1/2024,583,Morgan,application abandon,-0.06,No,Billing,3,1.18,No,Escalate
+P094,C075,Everything is fine.,11/3/2024,196,Morgan,application educate,-0.93,Yes,Product Info,4,4.57,Yes,Phone Call
+P095,C027,Everything is fine.,11/5/2024,109,Jordan,application abandon,0.97,No,Cancel Request,3,4.13,No,SMS
+P096,C075,I might cancel soon.,11/7/2024,560,Sam,application complete,-0.02,Yes,Billing,1,1.99,No,Offer
+P097,C097,I love the support team!,11/9/2024,323,Taylor,application educate,0.55,No,Cancel Request,4,2.67,No,Phone Call
+P098,C056,I might cancel soon.,11/11/2024,333,Taylor,application educate,0.06,Yes,Cancel Request,0,3.98,No,SMS
+P099,C032,I love the support team!,11/13/2024,352,Alex,application submit,-0.75,No,Technical Support,3,3.12,No,Phone Call
+P100,C093,I might cancel soon.,11/15/2024,186,Taylor,application submit,-0.1,Yes,Technical Support,2,1.4,Yes,Escalate

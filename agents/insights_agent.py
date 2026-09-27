@@ -36,18 +36,17 @@ class InsightsAgent:
         phone_calls["SalesChannel"] = phone_calls.get("SalesChannel", "phone")
 
         combined = pd.concat([chats, phone_calls], ignore_index=True, sort=False)
-        client_columns = [column for column in ["ClientID", "SalesChannel", "Region", "Status", "LifetimeValue"] if column in salesforce_clients.columns]
+        # Salesforce's SalesChannel is the client's preferred channel; keep it separate so it
+        # doesn't overwrite the channel this interaction actually came through.
+        salesforce_clients = salesforce_clients.rename(columns={"SalesChannel": "PreferredChannel"})
+        client_columns = [
+            column
+            for column in ["ClientID", "PreferredChannel", "Region", "Status", "LifetimeValue"]
+            if column in salesforce_clients.columns
+        ]
 
-        if "ClientID" in combined.columns and client_columns:
-            combined = combined.merge(
-                salesforce_clients[client_columns],
-                on="ClientID",
-                how="left",
-                suffixes=("", "_client"),
-            )
-            if "SalesChannel_client" in combined.columns:
-                combined["SalesChannel"] = combined["SalesChannel_client"].combine_first(combined["SalesChannel"])
-                combined = combined.drop(columns=["SalesChannel_client"])
+        if "ClientID" in combined.columns and len(client_columns) > 1:
+            combined = combined.merge(salesforce_clients[client_columns], on="ClientID", how="left")
 
         return combined
 
@@ -66,6 +65,7 @@ class InsightsAgent:
             "FunnelStep": row.get("FunnelStep"),
             "TimeSpent": row.get("TimeSpent"),
             "SalesChannel": row.get("SalesChannel"),
+            "PreferredChannel": row.get("PreferredChannel"),
             "Region": row.get("Region"),
             "ClientStatus": row.get("Status"),
             "LifetimeValue": row.get("LifetimeValue"),

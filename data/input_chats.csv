@@ -1,101 +1,101 @@
 ChatID,ClientID,Transcript,ChatDate,TimeSpent,AgentName,FunnelStep,SentimentScore,Resolved,InteractionIntent,PreviousContactCount,AgentPerformanceScore,CampaignSent,NextBestAction
-CH001,C097,Service has been slow.,5/1/2024,93,Casey,application abandon,0.78,No,Technical Support,2,4.01,No,Offer
-CH002,C005,I need a refund.,5/2/2024,103,Sam,application abandon,1,No,Product Info,5,3.73,No,Phone Call
-CH003,C023,Thanks for the quick help!,5/3/2024,277,Sam,application abandon,0.19,Yes,Billing,3,4.71,No,Survey
-CH004,C060,I'm satisfied with the product.,5/4/2024,102,Casey,application complete,0.62,Yes,Product Info,5,2.31,Yes,Offer
-CH005,C008,I need a refund.,5/5/2024,398,Jordan,application educate,0.46,No,Technical Support,5,4.46,No,Offer
-CH006,C093,Thanks for the quick help!,5/6/2024,305,Taylor,application educate,0.72,No,Billing,2,4.26,No,Offer
-CH007,C071,I need a refund.,5/7/2024,176,Alex,application educate,-0.58,Yes,Billing,1,4.11,No,SMS
-CH008,C003,I need a refund.,5/8/2024,201,Jordan,application educate,0.07,No,Billing,0,4.52,Yes,SMS
-CH009,C086,Thanks for the quick help!,5/9/2024,408,Taylor,application start,0.87,No,Billing,2,3.68,No,Offer
-CH010,C095,I need a refund.,5/10/2024,386,Taylor,application abandon,-0.47,No,Product Info,1,4.77,Yes,Offer
-CH011,C095,I need a refund.,5/11/2024,161,Casey,application start,0.97,Yes,Billing,4,2.58,Yes,Phone Call
-CH012,C052,I'm satisfied with the product.,5/12/2024,320,Morgan,application start,-0.37,Yes,Technical Support,3,4.72,No,Offer
-CH013,C026,I'm satisfied with the product.,5/13/2024,342,Morgan,application educate,-0.42,Yes,Technical Support,0,2.32,Yes,Offer
-CH014,C078,I'm not sure if I will continue using this.,5/14/2024,337,Sam,application abandon,0.63,Yes,Cancel Request,4,3.17,No,Escalate
-CH015,C004,I'm not sure if I will continue using this.,5/15/2024,418,Sam,application abandon,0.05,No,Billing,1,3.15,Yes,Offer
-CH016,C071,I'm satisfied with the product.,5/16/2024,342,Casey,application start,0.69,Yes,Product Info,1,4.96,No,Survey
-CH017,C014,Service has been slow.,5/17/2024,36,Morgan,application complete,-0.38,No,Feedback,5,2.39,No,Escalate
-CH018,C058,Service has been slow.,5/18/2024,167,Jordan,application submit,-0.46,No,Technical Support,4,1.62,Yes,SMS
-CH019,C024,Service has been slow.,5/19/2024,248,Jordan,application educate,-0.81,No,Product Info,3,3.77,No,Phone Call
-CH020,C004,I'm not sure if I will continue using this.,5/20/2024,118,Sam,application complete,-0.66,No,Billing,3,1.64,Yes,SMS
-CH021,C023,I need a refund.,5/21/2024,278,Casey,application educate,0.03,Yes,Feedback,3,4.41,No,SMS
-CH022,C003,Thanks for the quick help!,5/22/2024,121,Casey,application submit,0.23,Yes,Feedback,5,1.77,Yes,Survey
-CH023,C084,I need a refund.,5/23/2024,101,Alex,application educate,0.05,No,Billing,2,4.95,No,SMS
-CH024,C095,I'm satisfied with the product.,5/24/2024,219,Taylor,application start,-0.31,No,Cancel Request,5,1.21,Yes,Offer
-CH025,C033,I'm not sure if I will continue using this.,5/25/2024,288,Taylor,application complete,0.6,No,Feedback,4,3.22,Yes,Phone Call
-CH026,C022,Thanks for the quick help!,5/26/2024,119,Morgan,application start,0.24,No,Feedback,1,3.78,Yes,Escalate
-CH027,C040,I'm satisfied with the product.,5/27/2024,82,Morgan,application educate,-0.81,Yes,Cancel Request,4,3.36,No,Survey
-CH028,C008,Thanks for the quick help!,5/28/2024,182,Sam,application complete,0.29,No,Product Info,1,3.59,Yes,Phone Call
-CH029,C008,I'm satisfied with the product.,5/29/2024,55,Jordan,application start,-0.27,Yes,Cancel Request,4,2.53,No,SMS
-CH030,C022,I'm satisfied with the product.,5/30/2024,131,Taylor,application start,0.09,No,Technical Support,3,4.62,Yes,Offer
-CH031,C020,Service has been slow.,5/31/2024,248,Morgan,application educate,0.05,No,Product Info,5,1.6,Yes,Escalate
-CH032,C041,Service has been slow.,6/1/2024,183,Morgan,application start,-0.98,No,Product Info,4,2,Yes,Offer
-CH033,C081,Service has been slow.,6/2/2024,314,Taylor,application complete,-0.13,Yes,Billing,5,4.53,Yes,Survey
-CH034,C083,I'm not sure if I will continue using this.,6/3/2024,345,Casey,application abandon,-0.74,No,Product Info,1,2.01,No,Offer
-CH035,C057,I'm satisfied with the product.,6/4/2024,47,Taylor,application submit,0.03,Yes,Technical Support,1,2.67,Yes,Offer
-CH036,C049,I need a refund.,6/5/2024,423,Sam,application submit,-0.44,No,Cancel Request,0,1.16,No,Phone Call
-CH037,C005,I need a refund.,6/6/2024,263,Taylor,application complete,-0.66,No,Product Info,1,4.63,Yes,Phone Call
-CH038,C055,Service has been slow.,6/7/2024,417,Casey,application start,-0.46,No,Feedback,2,2.63,No,Survey
-CH039,C094,I need a refund.,6/8/2024,359,Morgan,application complete,0.69,No,Cancel Request,2,2.34,Yes,SMS
-CH040,C048,I need a refund.,6/9/2024,324,Taylor,application complete,-0.61,No,Feedback,0,4.29,Yes,Offer
-CH041,C003,Thanks for the quick help!,6/10/2024,181,Morgan,application educate,-0.24,No,Billing,2,4.24,Yes,Survey
-CH042,C097,Thanks for the quick help!,6/11/2024,200,Alex,application start,-0.72,Yes,Technical Support,0,4.46,Yes,Phone Call
-CH043,C046,Service has been slow.,6/12/2024,352,Morgan,application start,0.55,No,Technical Support,3,3.48,No,Phone Call
-CH044,C074,Thanks for the quick help!,6/13/2024,270,Alex,application complete,0.51,Yes,Billing,1,2.19,Yes,Escalate
-CH045,C090,I'm not sure if I will continue using this.,6/14/2024,244,Casey,application complete,0.38,No,Product Info,5,2.39,No,Offer
-CH046,C087,I'm satisfied with the product.,6/15/2024,148,Casey,application start,-0.14,No,Feedback,1,2.48,Yes,SMS
-CH047,C061,I'm not sure if I will continue using this.,6/16/2024,321,Alex,application submit,0.36,No,Product Info,1,4.39,Yes,Survey
-CH048,C053,I need a refund.,6/17/2024,459,Taylor,application submit,0.98,No,Product Info,2,4.36,No,Offer
-CH049,C075,I'm satisfied with the product.,6/18/2024,298,Casey,application start,-0.81,No,Feedback,4,3.32,Yes,Phone Call
-CH050,C027,Thanks for the quick help!,6/19/2024,145,Jordan,application start,0.74,No,Feedback,2,3.03,No,SMS
-CH051,C091,Thanks for the quick help!,6/20/2024,410,Jordan,application start,0.64,No,Product Info,3,3.89,No,SMS
-CH052,C054,I'm not sure if I will continue using this.,6/21/2024,282,Taylor,application submit,-0.47,No,Product Info,0,3.05,Yes,Offer
-CH053,C072,Service has been slow.,6/22/2024,493,Sam,application complete,0.21,Yes,Technical Support,1,3.1,No,Phone Call
-CH054,C018,Thanks for the quick help!,6/23/2024,491,Taylor,application educate,-0.99,Yes,Feedback,4,4.46,No,Escalate
-CH055,C057,Thanks for the quick help!,6/24/2024,372,Casey,application complete,0.82,Yes,Technical Support,4,3.47,Yes,Offer
-CH056,C028,Thanks for the quick help!,6/25/2024,100,Morgan,application submit,-0.26,No,Billing,0,3.87,Yes,SMS
-CH057,C057,Service has been slow.,6/26/2024,191,Jordan,application abandon,0.16,Yes,Technical Support,1,2.8,No,SMS
-CH058,C076,I need a refund.,6/27/2024,15,Taylor,application start,-0.43,Yes,Product Info,5,2.31,No,Offer
-CH059,C043,Service has been slow.,6/28/2024,397,Jordan,application abandon,0.25,No,Billing,0,2.06,No,Offer
-CH060,C010,I'm satisfied with the product.,6/29/2024,261,Morgan,application educate,0.09,No,Feedback,5,4.38,No,Survey
-CH061,C025,Thanks for the quick help!,6/30/2024,234,Morgan,application complete,-0.01,Yes,Billing,0,2.48,No,Phone Call
-CH062,C068,I need a refund.,7/1/2024,263,Sam,application submit,0.14,Yes,Cancel Request,2,4.68,No,Survey
-CH063,C091,I need a refund.,7/2/2024,294,Taylor,application abandon,-0.04,No,Technical Support,2,2.69,Yes,Offer
-CH064,C075,I need a refund.,7/3/2024,403,Alex,application abandon,-0.64,No,Technical Support,5,2.03,Yes,SMS
-CH065,C003,Thanks for the quick help!,7/4/2024,346,Morgan,application abandon,-0.55,Yes,Billing,2,1.74,Yes,Offer
-CH066,C013,I need a refund.,7/5/2024,307,Casey,application submit,-0.19,No,Billing,0,2.5,No,SMS
-CH067,C059,I'm not sure if I will continue using this.,7/6/2024,70,Morgan,application start,0.73,No,Cancel Request,1,3.2,Yes,Phone Call
-CH068,C069,I'm not sure if I will continue using this.,7/7/2024,318,Jordan,application submit,-0.14,No,Billing,4,1.76,No,SMS
-CH069,C003,Service has been slow.,7/8/2024,268,Morgan,application complete,0.75,No,Cancel Request,0,2.82,Yes,Survey
-CH070,C077,I need a refund.,7/9/2024,496,Sam,application complete,-0.23,Yes,Product Info,1,4.47,No,Survey
-CH071,C063,I need a refund.,7/10/2024,37,Morgan,application start,-0.7,No,Feedback,2,3.5,No,Phone Call
-CH072,C082,Thanks for the quick help!,7/11/2024,290,Alex,application start,-0.63,Yes,Technical Support,4,1.81,Yes,Phone Call
-CH073,C016,I'm satisfied with the product.,7/12/2024,140,Morgan,application educate,0.81,Yes,Billing,5,4.28,No,SMS
-CH074,C099,I'm not sure if I will continue using this.,7/13/2024,498,Alex,application submit,0.89,Yes,Feedback,5,3.55,No,SMS
-CH075,C009,Service has been slow.,7/14/2024,456,Alex,application complete,0.06,Yes,Billing,2,1.14,Yes,Survey
-CH076,C091,Thanks for the quick help!,7/15/2024,260,Morgan,application submit,-0.34,Yes,Technical Support,0,4.18,Yes,Offer
-CH077,C032,Service has been slow.,7/16/2024,57,Morgan,application educate,0.13,Yes,Product Info,5,1.85,No,Escalate
-CH078,C073,I need a refund.,7/17/2024,94,Jordan,application complete,-0.27,No,Technical Support,3,2.54,No,Phone Call
-CH079,C097,I need a refund.,7/18/2024,244,Alex,application start,-0.82,No,Technical Support,5,1.58,No,Escalate
-CH080,C044,Service has been slow.,7/19/2024,44,Jordan,application educate,-0.58,Yes,Billing,2,3.17,Yes,Survey
-CH081,C027,I need a refund.,7/20/2024,15,Casey,application complete,0.82,No,Cancel Request,1,4.12,Yes,SMS
-CH082,C086,Thanks for the quick help!,7/21/2024,109,Morgan,application complete,0.67,No,Product Info,2,3.52,Yes,Phone Call
-CH083,C087,I'm satisfied with the product.,7/22/2024,398,Sam,application submit,0.7,No,Feedback,5,2.7,Yes,SMS
-CH084,C073,Thanks for the quick help!,7/23/2024,193,Casey,application abandon,0.55,Yes,Billing,0,3.02,No,SMS
-CH085,C051,Thanks for the quick help!,7/24/2024,57,Morgan,application start,0.91,Yes,Product Info,3,2.19,Yes,Escalate
-CH086,C080,I'm not sure if I will continue using this.,7/25/2024,232,Taylor,application start,-0.82,No,Feedback,1,1.08,Yes,Phone Call
-CH087,C073,I'm not sure if I will continue using this.,7/26/2024,59,Jordan,application educate,-0.28,Yes,Cancel Request,5,3.22,No,Survey
-CH088,C014,Thanks for the quick help!,7/27/2024,262,Morgan,application submit,0.9,Yes,Billing,3,3.87,No,Offer
-CH089,C019,Service has been slow.,7/28/2024,187,Alex,application complete,-0.3,No,Cancel Request,3,1.76,Yes,SMS
-CH090,C068,I'm satisfied with the product.,7/29/2024,61,Taylor,application abandon,-0.62,No,Cancel Request,0,2.27,Yes,Survey
-CH091,C089,Service has been slow.,7/30/2024,163,Casey,application start,-0.65,Yes,Cancel Request,0,3.66,No,Offer
-CH092,C008,I need a refund.,7/31/2024,174,Jordan,application educate,-0.89,No,Feedback,1,3.56,No,Survey
-CH093,C064,I need a refund.,8/1/2024,26,Alex,application educate,0.97,No,Product Info,3,3.53,Yes,Escalate
-CH094,C091,I'm not sure if I will continue using this.,8/2/2024,321,Taylor,application complete,0.88,No,Billing,0,3.96,Yes,Survey
-CH095,C017,I'm not sure if I will continue using this.,8/3/2024,27,Casey,application educate,0.47,Yes,Cancel Request,4,1.68,No,SMS
-CH096,C012,Thanks for the quick help!,8/4/2024,170,Casey,application start,0.15,No,Feedback,4,4.03,Yes,Survey
-CH097,C094,I'm not sure if I will continue using this.,8/5/2024,158,Morgan,application complete,-0.34,Yes,Product Info,1,4.11,No,Survey
-CH098,C009,I'm satisfied with the product.,8/6/2024,203,Jordan,application abandon,0.55,Yes,Cancel Request,1,4.57,Yes,Survey
-CH099,C092,I'm satisfied with the product.,8/7/2024,121,Alex,application complete,0.75,Yes,Product Info,1,1.95,Yes,Survey
-CH100,C079,Service has been slow.,8/8/2024,493,Sam,application complete,-0.3,Yes,Billing,1,2.34,No,Escalate
+CH001,C014,I need a refund.,5/1/2024,100,Alex,application abandon,-0.27,No,Product Info,1,1.99,No,Offer
+CH002,C013,Service has been slow.,5/2/2024,84,Alex,application start,0.77,Yes,Technical Support,4,2.91,No,Survey
+CH003,C080,I'm not sure if I will continue using this.,5/3/2024,337,Alex,application abandon,0.86,No,Billing,3,1.18,No,Escalate
+CH004,C050,I'm satisfied with the product.,5/4/2024,230,Jordan,application educate,-0.19,No,Product Info,2,2.15,Yes,Offer
+CH005,C060,I'm not sure if I will continue using this.,5/5/2024,248,Casey,application complete,0.49,Yes,Billing,3,4.92,Yes,SMS
+CH006,C061,I need a refund.,5/6/2024,397,Jordan,application complete,-0.27,Yes,Cancel Request,3,4.62,Yes,Phone Call
+CH007,C072,Service has been slow.,5/7/2024,348,Morgan,application educate,-0.69,No,Cancel Request,0,3.33,No,SMS
+CH008,C003,I need a refund.,5/8/2024,449,Casey,application submit,0.15,No,Cancel Request,1,4.15,Yes,Escalate
+CH009,C049,I need a refund.,5/9/2024,96,Morgan,application start,-0.83,Yes,Feedback,4,4.61,No,Survey
+CH010,C015,I'm not sure if I will continue using this.,5/10/2024,383,Morgan,application submit,0.33,No,Technical Support,0,2.33,Yes,Phone Call
+CH011,C041,I need a refund.,5/11/2024,277,Sam,application start,0.62,No,Cancel Request,0,4.92,Yes,Offer
+CH012,C093,Service has been slow.,5/12/2024,32,Morgan,application abandon,0.83,Yes,Technical Support,4,2.79,Yes,Escalate
+CH013,C055,I need a refund.,5/13/2024,49,Alex,application abandon,-0.1,Yes,Product Info,1,1.64,No,SMS
+CH014,C008,Thanks for the quick help!,5/14/2024,189,Casey,application educate,-0.77,No,Product Info,2,3.12,Yes,SMS
+CH015,C055,I'm not sure if I will continue using this.,5/15/2024,325,Sam,application complete,0.8,Yes,Product Info,4,3.37,No,Survey
+CH016,C013,Thanks for the quick help!,5/16/2024,94,Morgan,application complete,0.74,Yes,Feedback,5,3.77,Yes,Phone Call
+CH017,C076,Thanks for the quick help!,5/17/2024,279,Casey,application educate,0.94,Yes,Feedback,4,3.68,Yes,SMS
+CH018,C095,I need a refund.,5/18/2024,500,Jordan,application submit,0.19,Yes,Feedback,1,1.17,Yes,Offer
+CH019,C098,I'm satisfied with the product.,5/19/2024,84,Taylor,application start,0.35,Yes,Product Info,1,3.56,Yes,Phone Call
+CH020,C063,I need a refund.,5/20/2024,84,Sam,application submit,-0.25,No,Cancel Request,4,4.69,Yes,Survey
+CH021,C087,Service has been slow.,5/21/2024,484,Jordan,application educate,-0.63,Yes,Cancel Request,4,3.68,No,Escalate
+CH022,C037,I need a refund.,5/22/2024,133,Casey,application submit,-0.42,No,Cancel Request,5,4.9,No,Offer
+CH023,C015,I need a refund.,5/23/2024,440,Alex,application educate,0.44,No,Technical Support,4,3.05,No,Phone Call
+CH024,C052,I'm not sure if I will continue using this.,5/24/2024,188,Sam,application educate,-0.35,Yes,Feedback,5,4.24,Yes,Survey
+CH025,C045,I need a refund.,5/25/2024,382,Morgan,application abandon,0.38,Yes,Product Info,2,1.56,Yes,Phone Call
+CH026,C067,Service has been slow.,5/26/2024,44,Jordan,application submit,0.0,Yes,Cancel Request,5,4.58,Yes,Survey
+CH027,C100,Service has been slow.,5/27/2024,322,Sam,application start,-0.1,Yes,Product Info,1,2.75,Yes,Offer
+CH028,C028,I need a refund.,5/28/2024,438,Morgan,application abandon,0.94,No,Feedback,0,4.51,Yes,SMS
+CH029,C086,I'm satisfied with the product.,5/29/2024,179,Morgan,application start,-0.67,Yes,Billing,3,2.28,Yes,Survey
+CH030,C014,I'm satisfied with the product.,5/30/2024,324,Sam,application educate,-0.03,Yes,Billing,0,3.5,Yes,SMS
+CH031,C035,I'm not sure if I will continue using this.,5/31/2024,119,Sam,application abandon,-0.68,No,Technical Support,0,4.39,No,SMS
+CH032,C079,I need a refund.,6/1/2024,92,Morgan,application educate,0.87,Yes,Technical Support,1,3.85,Yes,Phone Call
+CH033,C025,I'm not sure if I will continue using this.,6/2/2024,15,Jordan,application abandon,-0.02,No,Billing,2,3.48,No,Offer
+CH034,C068,I need a refund.,6/3/2024,257,Casey,application educate,-0.34,Yes,Technical Support,2,4.88,Yes,Survey
+CH035,C046,I need a refund.,6/4/2024,268,Casey,application abandon,-0.66,Yes,Technical Support,0,1.35,Yes,Escalate
+CH036,C052,Service has been slow.,6/5/2024,53,Taylor,application submit,0.19,Yes,Feedback,0,1.41,No,Survey
+CH037,C095,I'm not sure if I will continue using this.,6/6/2024,125,Casey,application educate,-0.2,Yes,Technical Support,0,3.21,Yes,Offer
+CH038,C082,I'm not sure if I will continue using this.,6/7/2024,311,Alex,application abandon,-0.75,No,Feedback,0,4.82,No,Offer
+CH039,C084,I'm satisfied with the product.,6/8/2024,192,Morgan,application submit,-0.94,No,Technical Support,4,3.75,Yes,Escalate
+CH040,C055,I need a refund.,6/9/2024,127,Casey,application educate,-0.22,Yes,Billing,0,2.24,Yes,SMS
+CH041,C099,Service has been slow.,6/10/2024,18,Alex,application complete,0.17,No,Product Info,1,1.43,No,SMS
+CH042,C099,I'm not sure if I will continue using this.,6/11/2024,33,Morgan,application abandon,0.04,No,Product Info,5,2.79,Yes,Escalate
+CH043,C014,Service has been slow.,6/12/2024,325,Sam,application educate,0.8,No,Technical Support,2,2.92,No,SMS
+CH044,C021,I need a refund.,6/13/2024,71,Alex,application submit,0.82,Yes,Product Info,2,2.87,Yes,Escalate
+CH045,C031,I'm satisfied with the product.,6/14/2024,425,Jordan,application abandon,0.87,No,Cancel Request,4,3.48,No,Offer
+CH046,C056,I need a refund.,6/15/2024,284,Alex,application educate,0.6,Yes,Billing,3,2.09,Yes,SMS
+CH047,C083,I'm satisfied with the product.,6/16/2024,137,Morgan,application complete,-0.04,Yes,Cancel Request,1,4.52,No,Survey
+CH048,C049,I need a refund.,6/17/2024,324,Sam,application submit,0.05,No,Feedback,2,2.15,Yes,Escalate
+CH049,C099,Thanks for the quick help!,6/18/2024,93,Sam,application educate,-0.21,Yes,Feedback,2,1.43,No,Survey
+CH050,C036,Thanks for the quick help!,6/19/2024,172,Sam,application start,-0.2,Yes,Technical Support,4,2.4,No,Escalate
+CH051,C093,I'm not sure if I will continue using this.,6/20/2024,256,Casey,application abandon,-0.92,No,Cancel Request,2,4.74,Yes,Escalate
+CH052,C060,I'm satisfied with the product.,6/21/2024,327,Morgan,application complete,0.6,Yes,Feedback,4,1.64,Yes,SMS
+CH053,C073,I'm satisfied with the product.,6/22/2024,81,Morgan,application abandon,-0.51,No,Feedback,2,2.11,Yes,Phone Call
+CH054,C024,Service has been slow.,6/23/2024,186,Taylor,application submit,-0.94,Yes,Billing,2,4.71,Yes,SMS
+CH055,C060,Thanks for the quick help!,6/24/2024,59,Sam,application educate,-0.07,No,Product Info,1,2.39,No,Escalate
+CH056,C081,I'm not sure if I will continue using this.,6/25/2024,78,Sam,application start,0.44,Yes,Technical Support,3,4.37,No,Phone Call
+CH057,C089,I'm not sure if I will continue using this.,6/26/2024,123,Alex,application start,-0.13,No,Feedback,2,1.18,No,Survey
+CH058,C087,Thanks for the quick help!,6/27/2024,168,Casey,application start,-0.27,Yes,Cancel Request,0,4.55,No,SMS
+CH059,C097,Thanks for the quick help!,6/28/2024,456,Jordan,application educate,0.32,Yes,Technical Support,2,1.95,Yes,Phone Call
+CH060,C013,Thanks for the quick help!,6/29/2024,207,Morgan,application abandon,-0.67,Yes,Product Info,1,1.72,No,Escalate
+CH061,C078,Service has been slow.,6/30/2024,68,Taylor,application educate,-0.98,Yes,Product Info,2,3.97,No,Offer
+CH062,C047,Thanks for the quick help!,7/1/2024,458,Jordan,application complete,0.18,No,Product Info,1,4.96,No,SMS
+CH063,C069,Service has been slow.,7/2/2024,291,Jordan,application complete,0.06,No,Cancel Request,5,4.84,Yes,Escalate
+CH064,C028,I'm not sure if I will continue using this.,7/3/2024,71,Sam,application submit,0.73,Yes,Technical Support,1,4.01,Yes,Phone Call
+CH065,C002,Thanks for the quick help!,7/4/2024,55,Casey,application complete,-0.17,Yes,Feedback,3,4.66,Yes,Survey
+CH066,C009,I'm not sure if I will continue using this.,7/5/2024,56,Jordan,application submit,0.57,Yes,Cancel Request,1,4.95,Yes,Phone Call
+CH067,C098,Service has been slow.,7/6/2024,457,Casey,application submit,-0.96,Yes,Cancel Request,3,3.21,Yes,SMS
+CH068,C090,Thanks for the quick help!,7/7/2024,287,Alex,application complete,-0.95,No,Technical Support,3,1.58,No,SMS
+CH069,C031,I'm not sure if I will continue using this.,7/8/2024,345,Sam,application submit,0.2,No,Technical Support,2,4.4,No,SMS
+CH070,C043,Service has been slow.,7/9/2024,483,Taylor,application abandon,-0.55,No,Cancel Request,1,2.58,No,Escalate
+CH071,C025,I'm satisfied with the product.,7/10/2024,210,Alex,application abandon,-0.87,No,Feedback,4,2.25,Yes,SMS
+CH072,C015,Thanks for the quick help!,7/11/2024,455,Sam,application educate,-0.74,Yes,Feedback,1,3.0,No,SMS
+CH073,C086,I'm not sure if I will continue using this.,7/12/2024,210,Sam,application abandon,-0.25,Yes,Billing,2,1.14,Yes,Offer
+CH074,C068,I'm satisfied with the product.,7/13/2024,355,Sam,application educate,-0.33,Yes,Technical Support,4,1.07,No,Offer
+CH075,C008,I'm not sure if I will continue using this.,7/14/2024,416,Sam,application start,0.13,No,Product Info,0,2.06,Yes,Survey
+CH076,C021,I need a refund.,7/15/2024,47,Morgan,application start,0.78,No,Technical Support,0,3.38,No,Offer
+CH077,C057,I need a refund.,7/16/2024,371,Alex,application abandon,-0.27,Yes,Feedback,2,4.0,No,Phone Call
+CH078,C091,I need a refund.,7/17/2024,406,Sam,application submit,-0.63,No,Cancel Request,0,4.83,No,Survey
+CH079,C100,Service has been slow.,7/18/2024,485,Casey,application complete,0.16,No,Feedback,3,4.27,No,Phone Call
+CH080,C022,Service has been slow.,7/19/2024,347,Jordan,application educate,-1.0,No,Cancel Request,0,4.76,No,Phone Call
+CH081,C062,I'm not sure if I will continue using this.,7/20/2024,252,Taylor,application complete,-0.23,No,Feedback,1,3.55,Yes,Escalate
+CH082,C004,Thanks for the quick help!,7/21/2024,84,Morgan,application educate,-0.37,Yes,Feedback,5,3.94,Yes,SMS
+CH083,C018,I need a refund.,7/22/2024,388,Casey,application start,-0.23,No,Cancel Request,3,3.35,No,SMS
+CH084,C021,I'm not sure if I will continue using this.,7/23/2024,240,Alex,application start,-0.9,Yes,Cancel Request,3,1.33,No,Escalate
+CH085,C045,Thanks for the quick help!,7/24/2024,407,Casey,application abandon,0.11,Yes,Billing,1,1.25,Yes,Survey
+CH086,C035,I'm satisfied with the product.,7/25/2024,38,Morgan,application start,0.25,No,Feedback,4,4.04,Yes,SMS
+CH087,C073,Thanks for the quick help!,7/26/2024,183,Taylor,application complete,0.5,Yes,Billing,0,1.81,Yes,Offer
+CH088,C047,Service has been slow.,7/27/2024,404,Sam,application complete,0.91,No,Technical Support,5,4.16,Yes,Escalate
+CH089,C034,I need a refund.,7/28/2024,311,Casey,application complete,-0.29,Yes,Cancel Request,0,2.86,Yes,Offer
+CH090,C091,I'm satisfied with the product.,7/29/2024,364,Sam,application complete,0.31,No,Feedback,1,1.03,Yes,Offer
+CH091,C063,I'm not sure if I will continue using this.,7/30/2024,302,Morgan,application abandon,-0.12,Yes,Product Info,5,3.25,Yes,Escalate
+CH092,C070,I'm satisfied with the product.,7/31/2024,406,Sam,application educate,-0.57,No,Billing,5,2.77,Yes,SMS
+CH093,C075,I'm not sure if I will continue using this.,8/1/2024,418,Jordan,application complete,0.78,No,Product Info,1,1.3,No,Offer
+CH094,C034,I'm satisfied with the product.,8/2/2024,384,Jordan,application educate,0.49,Yes,Feedback,1,2.04,No,Offer
+CH095,C090,Service has been slow.,8/3/2024,337,Jordan,application complete,0.89,No,Technical Support,5,2.23,No,SMS
+CH096,C002,I'm not sure if I will continue using this.,8/4/2024,144,Taylor,application submit,0.64,Yes,Product Info,3,2.38,No,Survey
+CH097,C031,Service has been slow.,8/5/2024,51,Morgan,application abandon,0.83,No,Product Info,4,3.83,Yes,Survey
+CH098,C016,I need a refund.,8/6/2024,398,Alex,application abandon,-0.74,No,Technical Support,4,1.67,No,SMS
+CH099,C001,Service has been slow.,8/7/2024,185,Morgan,application educate,-0.97,Yes,Feedback,3,2.77,No,Phone Call
+CH100,C100,I'm satisfied with the product.,8/8/2024,136,Taylor,application abandon,-0.6,No,Product Info,4,3.43,Yes,SMS

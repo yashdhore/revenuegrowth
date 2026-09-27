@@ -1,7 +1,10 @@
 data_sources:
-  chats_url: "https://raw.githubusercontent.com/yashdhore/kp_sales_agents_streamlit/master/data/input_chats.csv"
-  phone_calls_url: "https://raw.githubusercontent.com/yashdhore/kp_sales_agents_streamlit/master/data/input_phone_calls.csv"
-  salesforce_clients_url: "https://raw.githubusercontent.com/yashdhore/kp_sales_agents_streamlit/master/data/input_salesforce_clients.csv"
+  # Local CSVs (scripts/generate_all.py writes here) are used first; GitHub URLs are the fallback.
+  local_data_dir: "data"
+  chats_url: "https://raw.githubusercontent.com/yashdhore/revenuegrowth/main/data/input_chats.csv"
+  phone_calls_url: "https://raw.githubusercontent.com/yashdhore/revenuegrowth/main/data/input_phone_calls.csv"
+  salesforce_clients_url: "https://raw.githubusercontent.com/yashdhore/revenuegrowth/main/data/input_salesforce_clients.csv"
+  adobe_digital_url: "https://raw.githubusercontent.com/yashdhore/revenuegrowth/main/data/input_adobe_digital.csv"
 
 agents:
   - name: InsightsAgent
@@ -38,11 +41,116 @@ agents:
         Intent: ["Billing", "Cancel Request", "Technical Support", "Product Info", "Feedback"]
         Sentiment: ["Negative", "Neutral"]
     recommendation_strategy:
+      # Base score per outreach channel; customer signals below add to it and the highest score wins.
       score_weights:
-        Phone: 0.7
-        Email: 0.5
-        SMS: 0.3
-      priority_order: ["Phone", "Email", "SMS"]
+        Phone: 0.30
+        Chat: 0.30
+        Digital: 0.25
+        Email: 0.30
+        SMS: 0.20
+      # Signal -> score added to each channel when the signal is true for the customer.
+      signal_boosts:
+        negative_sentiment: {Phone: 0.25}
+        high_risk: {Phone: 0.15}
+        cancel_request: {Phone: 0.30}
+        high_lifetime_value: {Phone: 0.15}
+        contacted_via_chat: {Chat: 0.25, SMS: 0.05}
+        contacted_via_phone: {Phone: 0.10}
+        support_or_product_question: {Chat: 0.20, Digital: 0.10}
+        billing_question: {Email: 0.30}
+        feedback: {Email: 0.15, SMS: 0.10}
+        prefers_chat: {Chat: 0.10}
+        prefers_phone: {Phone: 0.10}
+        active_on_digital: {Digital: 0.25}
+        abandoned_digital_application: {Digital: 0.25, Email: 0.10}
+        mobile_user: {SMS: 0.25}
+      high_lifetime_value_threshold: 7000
+      priority_order: ["Phone", "Chat", "Digital", "Email", "SMS"]
       minimum_score_threshold: 0.1
     output:
       save_to: output/output_sales_campaign_recommendations.csv
+
+  - name: DigitalConversionAgent
+    description: Diagnoses the 8-step Adobe digital funnel and sizes conversion-rate opportunities.
+    # Target step-to-step continue rates (step N -> N+1); gaps below target are sized as opportunities.
+    benchmark_continue_rates:
+      1: 0.60
+      2: 0.55
+      3: 0.85
+      4: 0.83
+      5: 0.85
+      6: 0.80
+      7: 0.85
+    device_gap_threshold: 0.12      # flag a step when Mobile/Tablet trails Desktop by this much
+    low_quality_channel_ratio: 0.5  # channel converts at < 50% of site average
+    traffic_reallocation_share: 0.25
+    step_playbook:
+      1: "Sharpen home-page value proposition and route high-intent visitors straight to plan comparison."
+      2: "Add a guided plan recommender, clear price anchors and a sticky 'Start application' CTA on the comparison page."
+      3: "Shorten the application start: pre-fill known customer data and show progress / time-to-complete."
+      4: "Reduce personal-details fields, add inline validation and address auto-complete."
+      5: "Fix mobile identity verification: camera-friendly document capture, OTP retry and a 'verify later' save option."
+      6: "Show a transparent quote breakdown and offer a save-quote email before leaving."
+      7: "Simplify e-sign and payment: add wallets (Apple/Google Pay), reduce redirects and surface trust badges."
+    output:
+      save_to: output/output_digital_opportunities.csv
+
+  - name: DigitalSalesCampaignAgent
+    description: Builds a prioritized win-back list for known customers and leads who abandoned the digital funnel.
+    min_abandon_step: 3             # only visitors who started an application are targeted
+    high_value_quote: 5000
+    recovery_rates:                 # probability a targeted abandoner converts after outreach
+      Phone Outreach: 0.25
+      Live Chat Assist: 0.18
+      SMS Resume Link: 0.12
+      Email Saved Quote: 0.10
+      Email Nurture: 0.06
+      Paid Retargeting: 0.03
+    offers:
+      Phone Outreach: "Rep callback to resolve open issues and complete the application together."
+      Live Chat Assist: "Proactive chat invite with the application pre-loaded."
+      SMS Resume Link: "One-tap link to resume on desktop or finish verification with an agent."
+      Email Saved Quote: "Saved quote with plan summary and a limited-time first-month incentive."
+      Email Nurture: "Plan comparison guide and 'pick up where you left off' link."
+      Paid Retargeting: "Retarget anonymous abandoners with plan-specific creative."
+    output:
+      save_to: output/output_digital_sales_campaign.csv
+
+  - name: DigitalChannelAgent
+    description: Compares the digital funnel by marketing channel to show where each channel leaks and which channels pay back.
+    # Assumed fully loaded cost per visit (Adobe has no cost data) - replace with actual spend / visits.
+    cost_per_visit:
+      SEM: 18.00
+      SEO: 2.50          # content + agency cost spread over organic visits
+      Email: 0.80
+      Direct Mail: 40.00 # print + postage per responding visit
+      Affiliate: 28.00   # incl. referral bounty
+      Paid Social: 16.00
+      Display: 14.00
+      Direct: 0.00
+    min_step_visits: 20           # ignore channel/step cells with fewer visits than this when finding leaks
+    leak_gap_threshold: 0.08      # a channel "leaks" at a step when it trails the site rate by this much
+    # ROAS = first-year plan revenue / media cost. Evaluated top to bottom; first match wins.
+    tiers:
+      - {name: "Scale", min_roas: 8.0, min_conversion_index: 1.0, action: "Increase budget - converts above site average at strong return."}
+      - {name: "Optimize", min_roas: 5.0, min_conversion_index: 0.5, action: "Keep investing, but fix the leak step to lift return."}
+      - {name: "Fix or Cut", min_roas: 0.0, min_conversion_index: 0.0, action: "Low-intent traffic - fix targeting and the leak step, or move budget to Scale channels."}
+    owned_channel_action: "Owned / organic traffic - protect and grow (no media cost)."
+    # Channel-specific fix for a leak at step N (step N -> N+1); falls back to DigitalConversionAgent.step_playbook.
+    channel_step_fixes:
+      Paid Social:
+        1: "Tighten audiences to lookalikes of past buyers and land ads on plan comparison instead of the home page."
+        2: "Use plan-specific creative so social visitors arrive knowing which plan fits them."
+      Display:
+        1: "Cut broad prospecting placements; shift budget to retargeting visitors who reached plan comparison."
+        2: "Retarget comparison-page visitors with the plan they viewed and a clear 'Start application' CTA."
+      Direct Mail:
+        6: "Honor the mailed offer in the online quote (auto-apply the mail offer code) so responders see the price they were promised."
+      Affiliate:
+        3: "Pass affiliate lead data into the application to pre-fill details, and pay bounties on completed applications only."
+        4: "Pay affiliate bounties on verified applications, not clicks, to screen out incentive-only traffic."
+      SEO:
+        1: "Add clear plan-comparison CTAs to organic landing content."
+        2: "Add a guided plan recommender for research-stage organic visitors."
+    output:
+      save_to: output/output_digital_channel_scorecard.csv
