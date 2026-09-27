@@ -6,7 +6,6 @@ from pathlib import Path
 import altair as alt
 import pandas as pd
 import streamlit as st
-import streamlit.components.v1 as components
 
 from agent_runner import load_config, run_pipeline
 from agents.data_loader import GitHubCsvLoader, GitHubCsvSources, clean_frames, load_local_data, local_data_available
@@ -88,29 +87,52 @@ st.markdown(
         color: #ffffff !important;
         border: 0 !important;
     }
-    /* Wrap tabs onto extra rows so every tab stays visible instead of scrolling off to the right. */
-    div[data-baseweb="tab-list"] {
-        flex-wrap: wrap;
-        row-gap: 0.35rem;
+    .stButton > button:disabled {
+        background: #e3e9ee !important;
+        color: #9aa9b6 !important;
+        cursor: not-allowed;
     }
-    div[data-baseweb="tab-highlight"], div[data-baseweb="tab-border"] {
-        display: none;
+    /* Tab styling uses ARIA roles, which are stable across Streamlit versions (1.45 BaseWeb and 1.5x+ React Aria). */
+    div[data-testid="stTabs"] [role="tablist"] {
+        flex-wrap: wrap;               /* wrap onto extra rows so every tab stays visible */
+        gap: 0.35rem 0.3rem;
+        overflow: visible;
+        border-bottom: 0;
     }
-    button[data-baseweb="tab"] {
+    div[data-testid="stTabs"] [role="tab"] {
         background: #e7f3ff;
         color: #062b5f;
+        border: 0;
         border-radius: 8px;
         padding: 0.6rem 1rem;
-        margin-right: 0.25rem;
+        margin: 0;
         font-weight: 700;
+        cursor: pointer;
+        flex: 0 0 auto;
     }
-    button[data-baseweb="tab"][aria-selected="true"] {
+    div[data-testid="stTabs"] [role="tab"]:hover {
+        background: #d3e9ff;
+    }
+    div[data-testid="stTabs"] [role="tab"][aria-selected="true"] {
         background: linear-gradient(90deg, #006fd6 0%, #18c99a 100%);
         color: #ffffff;
     }
-    button[data-baseweb="tab"] p {
+    div[data-testid="stTabs"] [role="tab"] p {
         color: inherit;
         font-weight: 700;
+        margin: 0;
+    }
+    /* Hide the default underline / scroll chrome; the pill colours show the active tab. */
+    div[data-testid="stTabs"] .react-aria-SelectionIndicator,
+    div[data-baseweb="tab-highlight"],
+    div[data-baseweb="tab-border"] {
+        display: none;
+    }
+    .tab-position {
+        text-align: center;
+        color: #062b5f;
+        font-weight: 700;
+        padding-top: 0.45rem;
     }
     .insight-card {
         background: #ffffff;
@@ -620,51 +642,39 @@ def channel_effectiveness_chart(scorecard: pd.DataFrame) -> alt.Chart:
     return (points + labels).properties(height=320)
 
 
-TAB_NAV_HTML = """
-<style>
-  body { margin: 0; font-family: "Source Sans Pro", sans-serif; }
-  .nav { display: flex; align-items: center; justify-content: center; gap: 14px; height: 46px; }
-  button {
-    background: linear-gradient(90deg, #006fd6 0%, #18c99a 100%); color: #fff; border: 0; border-radius: 8px;
-    padding: 8px 16px; font-weight: 700; font-size: 14px; cursor: pointer;
-  }
-  button:hover { background: linear-gradient(90deg, #0059ad 0%, #10a77f 100%); }
-  button:disabled { background: #d9e1e8; color: #8a99a6; cursor: default; }
-  .pos { color: #062b5f; font-weight: 700; font-size: 15px; min-width: 260px; text-align: center; }
-</style>
-<div class="nav">
-  <button id="prev" title="Previous tab">&#9664; Previous</button>
-  <span class="pos" id="pos"></span>
-  <button id="next" title="Next tab">Next &#9654;</button>
-</div>
-<script>
-  // Drives the Streamlit tab bar in the parent page; only clicks existing tab buttons, never edits the parent DOM.
-  const tabs = () => Array.from(window.parent.document.querySelectorAll('div[data-baseweb="tab-list"] button[data-baseweb="tab"]'));
-  const current = () => tabs().findIndex(tab => tab.getAttribute("aria-selected") === "true");
-  function refresh() {
-    const all = tabs(), i = current();
-    if (!all.length || i < 0) return;
-    document.getElementById("pos").textContent = `Tab ${i + 1} of ${all.length} - ${all[i].innerText.trim()}`;
-    document.getElementById("prev").disabled = i === 0;
-    document.getElementById("next").disabled = i === all.length - 1;
-  }
-  function go(step) {
-    const all = tabs(), target = all[current() + step];
-    if (!target) return;
-    target.click();
-    target.scrollIntoView({ block: "nearest", inline: "nearest" });
-    setTimeout(refresh, 50);
-  }
-  document.getElementById("prev").onclick = () => go(-1);
-  document.getElementById("next").onclick = () => go(1);
-  setInterval(refresh, 400);  // stay in sync when a tab is clicked directly
-  refresh();
-</script>
-"""
+TAB_NAMES = [
+    "Executive Summary",
+    "Financial Lens",
+    "Customer Journey",
+    "Insights Agent",
+    "Performance Agent",
+    "Sales Campaign Agent",
+    "Digital Conversion",
+    "Digital Channel Insights",
+    "Digital Sales Campaign",
+]
+ACTIVE_TAB_KEY = "active_tab"
+
+
+def active_tab_index() -> int:
+    current = st.session_state.get(ACTIVE_TAB_KEY, TAB_NAMES[0])
+    return TAB_NAMES.index(current) if current in TAB_NAMES else 0
+
+
+def step_tab(step: int) -> None:
+    index = min(max(active_tab_index() + step, 0), len(TAB_NAMES) - 1)
+    st.session_state[ACTIVE_TAB_KEY] = TAB_NAMES[index]
 
 
 def show_tab_navigator() -> None:
-    components.html(TAB_NAV_HTML, height=50)
+    index = active_tab_index()
+    prev_col, position_col, next_col = st.columns([1, 2, 1], vertical_alignment="center")
+    prev_col.button("◀ Previous", on_click=step_tab, args=(-1,), disabled=index == 0, width="stretch")
+    position_col.markdown(
+        f"<div class='tab-position'>Tab {index + 1} of {len(TAB_NAMES)} - {TAB_NAMES[index]}</div>",
+        unsafe_allow_html=True,
+    )
+    next_col.button("Next ▶", on_click=step_tab, args=(1,), disabled=index == len(TAB_NAMES) - 1, width="stretch")
 
 
 def show_tab_header(title: str, description: str) -> None:
@@ -718,7 +728,7 @@ with st.sidebar:
         st.success(f"Enabled: {llm_status.model}")
     else:
         st.warning("Fallback mode: add OPENAI_API_KEY to .env to enable LLM insights.")
-    refresh_clicked = st.button("Refresh agents", type="primary", use_container_width=True)
+    refresh_clicked = st.button("Refresh agents", type="primary", width="stretch")
 
 if refresh_clicked:
     load_github_data.clear()
@@ -778,19 +788,7 @@ show_tab_navigator()
     tab_digital,
     tab_channels,
     tab_digital_campaign,
-) = st.tabs(
-    [
-        "Executive Summary",
-        "Financial Lens",
-        "Customer Journey",
-        "Insights Agent",
-        "Performance Agent",
-        "Sales Campaign Agent",
-        "Digital Conversion",
-        "Digital Channel Insights",
-        "Digital Sales Campaign",
-    ]
-)
+) = st.tabs(TAB_NAMES, key=ACTIVE_TAB_KEY, on_change="rerun")
 
 with tab_summary:
     show_tab_header(
@@ -835,7 +833,7 @@ with tab_financial:
         chart_cols = st.columns(2)
         with chart_cols[0]:
             st.caption("Incremental revenue by growth lever")
-            st.altair_chart(value_bar_chart(levers_df, "Lever", "Revenue", "Incremental revenue"), use_container_width=True)
+            st.altair_chart(value_bar_chart(levers_df, "Lever", "Revenue", "Incremental revenue"), width="stretch")
         with chart_cols[1]:
             st.caption("Monthly digital revenue (booked)")
             monthly = digital.get("monthly", pd.DataFrame())
@@ -851,14 +849,14 @@ with tab_financial:
                 tooltip=["Channel", "Clients"],
             )
             .properties(height=180),
-            use_container_width=True,
+            width="stretch",
         )
         st.markdown("#### Service Campaign Records (chat & phone)")
     st.dataframe(
         campaign_df[["ClientID", "RecommendedChannel", "RecommendationScore", "Reason", "Sentiment", "Intent", "Resolved"]]
         if not campaign_df.empty
         else campaign_df,
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
 
@@ -874,7 +872,7 @@ with tab_journey:
         selected_row = insights_df[insights_df["ClientID"].astype(str) == selected_client].iloc[0]
         show_bullets(build_customer_journey_bullets(selected_row))
         st.text_area("Transcript", value=str(selected_row.get("Transcript", "")), height=180)
-        st.dataframe(pd.DataFrame([selected_row]), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame([selected_row]), width="stretch", hide_index=True)
         if has_digital:
             client_visits = digital_visits[digital_visits["ClientID"].astype(str) == selected_client]
             st.markdown("#### Digital Journey (Adobe)")
@@ -892,7 +890,7 @@ with tab_journey:
                     client_visits[
                         ["VisitDate", "Device", "MarketingChannel", "FunnelStepReached", "PlanViewed", "QuoteValue", "Converted", "Revenue"]
                     ],
-                    use_container_width=True,
+                    width="stretch",
                     hide_index=True,
                 )
 
@@ -910,7 +908,7 @@ with tab_insights:
         chart_cols[1].bar_chart(insights_df["Intent"].value_counts())
     if "RiskLevel" in insights_df.columns:
         chart_cols[2].bar_chart(insights_df["RiskLevel"].value_counts())
-    st.dataframe(insights_df, use_container_width=True, hide_index=True)
+    st.dataframe(insights_df, width="stretch", hide_index=True)
     st.download_button("Download insights CSV", dataframe_to_csv(insights_df), "output_insights.csv", "text/csv")
 
 with tab_performance:
@@ -922,7 +920,7 @@ with tab_performance:
     show_bullets(build_performance_bullets(performance_df, insights_df))
     if not performance_df.empty:
         st.bar_chart(performance_df.set_index("AgentName")[["ResolutionRate", "AvgSentimentScore"]])
-    st.dataframe(performance_df, use_container_width=True, hide_index=True)
+    st.dataframe(performance_df, width="stretch", hide_index=True)
     st.download_button(
         "Download performance CSV",
         dataframe_to_csv(performance_df),
@@ -942,7 +940,7 @@ with tab_campaign:
         chart_cols[0].bar_chart(outreach_only(campaign_df)["RecommendedChannel"].value_counts())
     if not campaign_df.empty and "Sentiment" in campaign_df.columns:
         chart_cols[1].bar_chart(campaign_df["Sentiment"].value_counts())
-    st.dataframe(campaign_df, use_container_width=True, hide_index=True)
+    st.dataframe(campaign_df, width="stretch", hide_index=True)
     st.download_button(
         "Download campaign CSV",
         dataframe_to_csv(campaign_df),
@@ -969,17 +967,17 @@ with tab_digital:
         chart_cols = st.columns(2)
         with chart_cols[0]:
             st.caption("8-step digital funnel: visits reaching each step")
-            st.altair_chart(funnel_chart(digital["funnel"]), use_container_width=True)
+            st.altair_chart(funnel_chart(digital["funnel"]), width="stretch")
         with chart_cols[1]:
             st.caption("Step continue rate by device")
-            st.altair_chart(device_chart(digital["device_funnel"]), use_container_width=True)
+            st.altair_chart(device_chart(digital["device_funnel"]), width="stretch")
 
         st.markdown("#### Prioritized Conversion Opportunities")
         st.dataframe(
             opportunities_df[
                 ["Rank", "Area", "Opportunity", "CurrentRate", "TargetRate", "IncrementalConversions", "IncrementalRevenue", "Diagnosis", "Recommendation"]
             ],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config={
                 "CurrentRate": st.column_config.NumberColumn("Current", format="percent"),
@@ -994,7 +992,7 @@ with tab_digital:
         st.markdown("#### Marketing Channel Performance")
         st.dataframe(
             digital["channels"],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config={
                 "Revenue": st.column_config.NumberColumn(format="dollar"),
@@ -1040,15 +1038,15 @@ with tab_channels:
             "Share of visitors who continue to the next step. Red = channel loses more visitors than the site average at that step; "
             "blue = it holds them better."
         )
-        st.altair_chart(channel_heatmap(channel_funnel_df, channel_order), use_container_width=True)
+        st.altair_chart(channel_heatmap(channel_funnel_df, channel_order), width="stretch")
 
         chart_cols = st.columns(2)
         with chart_cols[0]:
             selected_channel = st.selectbox("Compare a channel's funnel with the site", channel_order)
-            st.altair_chart(channel_funnel_compare_chart(channel_funnel_df, selected_channel), use_container_width=True)
+            st.altair_chart(channel_funnel_compare_chart(channel_funnel_df, selected_channel), width="stretch")
         with chart_cols[1]:
             st.caption("Channel effectiveness: conversion vs revenue per visit (bubble size = visits)")
-            st.altair_chart(channel_effectiveness_chart(scorecard_df), use_container_width=True)
+            st.altair_chart(channel_effectiveness_chart(scorecard_df), width="stretch")
 
         st.markdown("#### Channel Scorecard")
         st.dataframe(
@@ -1058,7 +1056,7 @@ with tab_channels:
                     "MediaCost", "ROAS", "CostPerSale", "BiggestLeak", "Action",
                 ]
             ],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config={
                 "MarketingChannel": st.column_config.TextColumn("Channel"),
@@ -1079,7 +1077,7 @@ with tab_channels:
         else:
             st.dataframe(
                 leaks_df[["MarketingChannel", "LeakStep", "VisitsReached", "ChannelRate", "SiteRate", "LostSales", "LostRevenue", "Fix"]],
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
                 column_config={
                     "MarketingChannel": st.column_config.TextColumn("Channel"),
@@ -1120,7 +1118,7 @@ with tab_digital_campaign:
         with chart_cols[0]:
             st.caption("Expected recovered revenue by outreach channel")
             by_channel = targets_df.groupby("RecommendedChannel", as_index=False)["ExpectedRevenue"].sum()
-            st.altair_chart(value_bar_chart(by_channel, "RecommendedChannel", "ExpectedRevenue", "Expected revenue"), use_container_width=True)
+            st.altair_chart(value_bar_chart(by_channel, "RecommendedChannel", "ExpectedRevenue", "Expected revenue"), width="stretch")
         with chart_cols[1]:
             st.caption("Abandoners by funnel step")
             by_step = targets_df.groupby(["AbandonStep", "AbandonStepName"], as_index=False).size()
@@ -1130,7 +1128,7 @@ with tab_digital_campaign:
                 .mark_bar(color="#006fd6", cornerRadiusEnd=3)
                 .encode(y=alt.Y("Step:N", sort=None, title=None, axis=alt.Axis(labelLimit=260)), x=alt.X("size:Q", title="Contacts"), tooltip=["Step", "size"])
                 .properties(height=240),
-                use_container_width=True,
+                width="stretch",
             )
 
         st.markdown("#### Win-back Target List")
@@ -1147,7 +1145,7 @@ with tab_digital_campaign:
                     "ExpectedRevenue",
                 ]
             ],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config={
                 "ContactKey": st.column_config.TextColumn("Client / Lead"),
@@ -1161,7 +1159,7 @@ with tab_digital_campaign:
             st.markdown("#### Anonymous Retargeting Audiences")
             st.dataframe(
                 retargeting_df,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
                 column_config={
                     "AvgQuoteValue": st.column_config.NumberColumn("Avg Quote Value", format="dollar"),
